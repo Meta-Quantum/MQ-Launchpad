@@ -4,10 +4,7 @@ import './Menu.scss'
 function Menu() {
   return (
     <div className='menu__container'>
-        {/* about */}
-        <div className='menu__container__element'>
-            <p className='menu__container__element__link'>about</p>
-        </div>
+       
         {/* our fundamentals */}
         <div className='menu__container__element'>
             <p className='menu__container__element__link'>our fundamentals</p>
@@ -27,6 +24,10 @@ function Menu() {
         {/* careers */}
         <div className='menu__container__element'>
             <p className='menu__container__element__link'>careers</p>
+        </div>
+         {/* about */}
+         <div className='menu__container__element'>
+            <p className='menu__container__element__link'>about</p>
         </div>
     </div>
   ) 

@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.sponsors__container{
+    margin-top: 92px;
+    width:90%;
+    @include flex(row, space-between, center);
+
+    &__element{
+
+
+        &__logo{
+            width: 228px;
+            height: 44px;
+        }
+
+        &__insider{
+            width: 228px;
+            height:  60px;
+        }
+
+        &__yahoo{
+            width: 228px;
+            height:  60px;
+        }
+    }
+}
