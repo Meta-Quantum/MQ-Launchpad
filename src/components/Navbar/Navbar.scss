@@ -1,14 +1,12 @@
 @import '../../variables.scss';
 
 .navbar__container{
-    margin: auto;
     width:90%;
-    border: 1px solid white;
     @include flex(column, center, center);
     color:white;
-    padding:20px 70px;
  
     &__element{
+        margin-top: 61px;
         width:100%;
         @include flex(row, space-between, center);
 

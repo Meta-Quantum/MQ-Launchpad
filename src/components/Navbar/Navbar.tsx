@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.scss'
 import Buttons from './Buttons/Buttons'
+import Menu from './Menu/Menu'
 import logo from '../../assets/logo.png'
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
      </div>
      <div className='navbar__container__element'>
      <img className='navbar__container__element__logo' src={logo} alt='meta-quantum-logo'/>
-     <div>Menu</div>
+   <Menu />
         </div>
   
     </div>
