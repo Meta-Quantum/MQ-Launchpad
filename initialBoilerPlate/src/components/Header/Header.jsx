@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import Cards from '../Cards/Cards'
-import Sponsors from '../Sponsors/Sponsors'
+import Navbar from '../Navbar/Navbar.jsx'
+import Sponsors from '../Sponsors/Sponsors.tsx'
+import Cards from '../Cards/Cards.tsx'
 import './Header.scss'
 
 function Header() {

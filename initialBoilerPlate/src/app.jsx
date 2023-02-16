@@ -1,8 +1,15 @@
 import React from "react";
+import './App.scss';
+import Header from './components/Header/Header.jsx';
 
 const App = () => {
-  const da = "da";
-  return <h1>Hello NFT Launchpad</h1>;
+  
+  return (
+    <div className="App">
+     <Header/>
+     App
+    </div>
+  );
 };
 
 export default App;
