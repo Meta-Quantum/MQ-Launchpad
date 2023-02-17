@@ -1,7 +1,7 @@
 import React from 'react'
-import coindesk_logo from '../../assets/coindesk_logo.png'
-import forbes_logo from './../../assets/forbes_logo.svg'
-import  business_insider_logo from './../../assets/business_insider_logo.png'
+import coindesk_logo from './../../assets/coindesk_logo.png'
+import forbes_logo from './../../assets/forbes_logo.png'
+import business_insider_logo from './../../assets/business_insider_logo.png'
 import yahoo_finance_logo from './../../assets/yahoo_finance_logo.png'
 import './Sponsors.scss';
 

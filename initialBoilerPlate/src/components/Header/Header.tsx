@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar.jsx'
-import Cards from '../Cards/Cards.jsx'
-import Sponsors from '../Sponsors/Sponsors.jsx'
+import Navbar from '../Navbar/Navbar'
+import Cards from '../Cards/Cards'
+import Sponsors from '../Sponsors/Sponsors'
 import './Header.scss'
 
 function Header() {
@@ -16,8 +16,8 @@ function Header() {
      <div className='header__container__element'>
      <p className='header__container__element__sub-title'>“ the best way to predict the future is to create it ”</p>
      </div>
-      <Sponsors />
-     <Cards /> 
+     <Sponsors />
+     <Cards />
     </div>
   )
 }

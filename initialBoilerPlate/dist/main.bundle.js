@@ -9,17 +9,6 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/assets/forbes_logo.svg":
-/*!************************************!*\
-  !*** ./src/assets/forbes_logo.svg ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\nfunction _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nvar SvgForbesLogo = function SvgForbesLogo(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", _extends({\n    xmlns: \"http://www.w3.org/2000/svg\",\n    viewBox: \"0 0 52.04 13.63\"\n  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M5 1.24h1.14a3.84 3.84 0 0 1 2.05.26 3.63 3.63 0 0 1 1.64 2.19c.17.48.17.48.58.31h.32V.2H0v.67h.44a1.28 1.28 0 0 1 1 .47c.41.66.48 1.4.48 5.25 0 4.09-.09 5.09-.48 5.6a1.08 1.08 0 0 1-.83.44c-.61.11-.61.1-.61.37a.4.4 0 0 0 0 .28h6.77a.63.63 0 0 0 0-.57 3.45 3.45 0 0 0-.5-.1 3.34 3.34 0 0 1-.54-.11A1.8 1.8 0 0 1 5 10.87C4.9 10.21 4.85 9 4.85 8v-.79h.4a5.4 5.4 0 0 1 1.48.16 1.85 1.85 0 0 1 .86 1.32l.09.31h.61V4.57h-.56L7.64 5a1.78 1.78 0 0 1-.91 1.32 1.67 1.67 0 0 1-.73.05H4.85V5.29c0-1.12.06-3.48.1-3.85Zm46.8 7.93a3.63 3.63 0 0 0-2.07-1.57 5 5 0 0 1-1.79-1 1 1 0 0 1-.29-.89 1.19 1.19 0 0 1 .35-.84 1.21 1.21 0 0 1 1.2-.33 2.52 2.52 0 0 1 1.77 1.88c.16.45.18.45.47.33l.18-.07V4.19l-.13-.06a7.73 7.73 0 0 0-3.07-.42 3.6 3.6 0 0 0-2.4 1 2.76 2.76 0 0 0-.87 2.16 2.37 2.37 0 0 0 .68 1.64 4.06 4.06 0 0 0 1.7 1c1.55.61 2 1 2 1.71a1.32 1.32 0 0 1-1 1.31 2.47 2.47 0 0 1-1.06 0 3.08 3.08 0 0 1-1.87-2.11l-.13-.32h-.18a.8.8 0 0 0-.25.06h-.1V13h.17a10.31 10.31 0 0 0 2.08.46h1a3.92 3.92 0 0 0 1.29-.12 3.11 3.11 0 0 0 2.36-2 2.32 2.32 0 0 0 .18-.9 2.49 2.49 0 0 0-.22-1.27ZM42.38 4a4.61 4.61 0 0 0-3.77.09 4.39 4.39 0 0 0-2.29 2.73 5.34 5.34 0 0 0-.27 2 5.47 5.47 0 0 0 .09 1.1 4.44 4.44 0 0 0 3.59 3.58 7 7 0 0 0 1.75 0 4.8 4.8 0 0 0 1.7-.65 3 3 0 0 0 1.06-1 .5.5 0 0 0-.24-.31 1.29 1.29 0 0 0-.32.17 2.86 2.86 0 0 1-1.68.47 2.67 2.67 0 0 1-2.13-.84 2.39 2.39 0 0 1-.51-.68 4.65 4.65 0 0 1-.49-2v-.39h5.54v-.2a4.91 4.91 0 0 0 0-.6A4 4 0 0 0 42.38 4Zm-2.79 3.46h-.7v-.59c.23-1.51.8-2.41 1.5-2.41s1 .89 1.13 2.52v.46h-.6ZM25.21 3.67a2.1 2.1 0 0 0-1 .21 3.35 3.35 0 0 0-1.55 1.55l-.13.24v-2h-.05c-.12 0-3.82.74-3.94.79s-.08.06-.08.24 0 .21.08.22l.39.08a.72.72 0 0 1 .56.29c.25.33.3.91.3 3.38a19.31 19.31 0 0 1-.14 3.33.82.82 0 0 1-.69.65l-.34.07h-.13V13a.4.4 0 0 0 0 .29h5.59V13a.73.73 0 0 0 0-.29 5.59 5.59 0 0 1-1-.13 1 1 0 0 1-.53-1c-.08-.58-.12-2.28-.1-3.58s0-1.38.11-1.47a1.8 1.8 0 0 1 1.17-.37 2.61 2.61 0 0 1 1.14.29 1.5 1.5 0 0 0 .39.15s1-2.42 1-2.53a1.18 1.18 0 0 0-1.05-.4Zm-6.74 4.2a4.49 4.49 0 0 0-2.06-3.56 5.2 5.2 0 0 0-4.68-.13 4.52 4.52 0 0 0-2.19 2.6 6.68 6.68 0 0 0 0 3.84 4.19 4.19 0 0 0 1.07 1.81 4.06 4.06 0 0 0 2.31 1.12 10.08 10.08 0 0 0 1.68 0 5.29 5.29 0 0 0 .61-.13 4.45 4.45 0 0 0 3.19-3.55 8.74 8.74 0 0 0 .07-2Zm-4.16 5c-1 .3-1.75-.67-2-2.71a18.74 18.74 0 0 1 0-3.21c.2-1.64.71-2.47 1.5-2.47a1 1 0 0 1 .84.37c.67.67 1 2 1 4a7.41 7.41 0 0 1-.52 3.32 1.52 1.52 0 0 1-.82.65v.05Zm18-9a3.33 3.33 0 0 0-.85 0 3.78 3.78 0 0 0-1.57.34l-.31.13V2.17a14.91 14.91 0 0 0 0-2.2c-.12 0-3.94.73-4 .76a.31.31 0 0 0 0 .23c0 .21 0 .2.45.3a1.29 1.29 0 0 1 .36.14 1.23 1.23 0 0 1 .37.69 11.45 11.45 0 0 1 .11 2.3v8.78l.27.06c.4.09 1.53.28 1.9.32a14 14 0 0 0 2.22 0A4.53 4.53 0 0 0 35 10.74a6.89 6.89 0 0 0 .38-1.52 9 9 0 0 0-.07-2.11 3.85 3.85 0 0 0-3-3.24Zm-2.62 8.83c0-.13-.1-4.51-.08-6.26V5.07L29.9 5a2.08 2.08 0 0 1 .59 0 1 1 0 0 1 .62.14 3 3 0 0 1 1.29 2.28 11 11 0 0 1 0 2.19 4.81 4.81 0 0 1-1.16 2.87 1.39 1.39 0 0 1-.71.36 1.78 1.78 0 0 1-.61 0c-.19 0-.19-.06-.19-.14Z\",\n    transform: \"translate(.01 .03)\",\n    style: {\n      fill: \"#bdbcbc\"\n    }\n  }));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (SvgForbesLogo);\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/forbes_logo.svg?");
-
-/***/ }),
-
 /***/ "./node_modules/ansi-html-community/index.js":
 /*!***************************************************!*\
   !*** ./node_modules/ansi-html-community/index.js ***!
@@ -31,28 +20,6 @@ eval("\n\nmodule.exports = ansiHTML\n\n// Reference to https://github.com/sindre
 
 /***/ }),
 
-/***/ "./src/app.jsx":
-/*!*********************!*\
-  !*** ./src/app.jsx ***!
-  \*********************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.scss */ \"./src/App.scss\");\n/* harmony import */ var _components_Header_Header_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header/Header.tsx */ \"./src/components/Header/Header.tsx\");\n\n\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"App\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_Header_tsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), \"App\");\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack://nftlaunchpad/./src/app.jsx?");
-
-/***/ }),
-
-/***/ "./src/components/Cards/Cards.jsx":
-/*!****************************************!*\
-  !*** ./src/components/Cards/Cards.jsx ***!
-  \****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Cards_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cards.scss */ \"./src/components/Cards/Cards.scss\");\n\n\nfunction Cards() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"cards__container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"cards__container__element\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"cards__container__element\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"cards__container__element\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"cards__container__element\"\n  }));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Cards);\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Cards/Cards.jsx?");
-
-/***/ }),
-
 /***/ "./src/components/Navbar/Navbar.jsx":
 /*!******************************************!*\
   !*** ./src/components/Navbar/Navbar.jsx ***!
@@ -61,17 +28,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.scss */ \"./src/components/Navbar/Navbar.scss\");\n/* harmony import */ var _Buttons_Buttons_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Buttons/Buttons.tsx */ \"./src/components/Navbar/Buttons/Buttons.tsx\");\n/* harmony import */ var _Menu_Menu_tsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Menu/Menu.tsx */ \"./src/components/Navbar/Menu/Menu.tsx\");\n/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/logo.png */ \"./src/assets/logo.png\");\n\n\n\n\n\nfunction Navbar() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"navbar__container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"navbar__container__element\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Buttons_Buttons_tsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"navbar__container__element\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: \"navbar__container__element__logo\",\n    src: _assets_logo_png__WEBPACK_IMPORTED_MODULE_4__,\n    alt: \"meta-quantum-logo\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Menu_Menu_tsx__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null)));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Navbar);\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Navbar/Navbar.jsx?");
-
-/***/ }),
-
-/***/ "./src/components/Sponsors/Sponsors.jsx":
-/*!**********************************************!*\
-  !*** ./src/components/Sponsors/Sponsors.jsx ***!
-  \**********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_coindesk_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/coindesk_logo.png */ \"./src/assets/coindesk_logo.png\");\n/* harmony import */ var _assets_forbes_logo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../assets/forbes_logo.svg */ \"./src/assets/forbes_logo.svg\");\n/* harmony import */ var _assets_business_insider_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../assets/business_insider_logo.png */ \"./src/assets/business_insider_logo.png\");\n/* harmony import */ var _assets_yahoo_finance_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../assets/yahoo_finance_logo.png */ \"./src/assets/yahoo_finance_logo.png\");\n/* harmony import */ var _Sponsors_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Sponsors.scss */ \"./src/components/Sponsors/Sponsors.scss\");\n\n\n\n\n\n\nfunction Sponsors() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"sponsors__container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"sponsors__container__element\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: \"sponsors__container__element__logo\",\n    src: _assets_coindesk_logo_png__WEBPACK_IMPORTED_MODULE_1__,\n    alt: \"coindesk logo\"\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"sponsors__container__element\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: \"sponsors__container__element__logo\",\n    src: _assets_forbes_logo_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n    alt: \"forbes logo\"\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"sponsors__container__element\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: \"sponsors__container__element__insider\",\n    src: _assets_business_insider_logo_png__WEBPACK_IMPORTED_MODULE_3__,\n    alt: \"business_insider_logo\"\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"sponsors__container__element\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: \"sponsors__container__element__yahoo\",\n    src: _assets_yahoo_finance_logo_png__WEBPACK_IMPORTED_MODULE_4__,\n    alt: \"yahoo_finance_logo\"\n  })));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Sponsors);\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Sponsors/Sponsors.jsx?");
 
 /***/ }),
 
@@ -207,6 +163,28 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
+/***/ "./src/app.tsx":
+/*!*********************!*\
+  !*** ./src/app.tsx ***!
+  \*********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.scss */ \"./src/App.scss\");\n/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header/Header */ \"./src/components/Header/Header.tsx\");\n\n\n\nfunction App() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: \"App\" },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null),\n        \"App\"));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/app.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/Cards/Cards.tsx":
+/*!****************************************!*\
+  !*** ./src/components/Cards/Cards.tsx ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Cards_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cards.scss */ \"./src/components/Cards/Cards.scss\");\n\n\nfunction Cards() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'cards__container' },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'cards__container__element' }),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'cards__container__element' }),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'cards__container__element' }),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'cards__container__element' })));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Cards);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Cards/Cards.tsx?");
+
+/***/ }),
+
 /***/ "./src/components/Header/Header.tsx":
 /*!******************************************!*\
   !*** ./src/components/Header/Header.tsx ***!
@@ -214,7 +192,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Navbar_Navbar_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Navbar/Navbar.jsx */ \"./src/components/Navbar/Navbar.jsx\");\n/* harmony import */ var _Cards_Cards_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Cards/Cards.jsx */ \"./src/components/Cards/Cards.jsx\");\n/* harmony import */ var _Sponsors_Sponsors_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Sponsors/Sponsors.jsx */ \"./src/components/Sponsors/Sponsors.jsx\");\n/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header.scss */ \"./src/components/Header/Header.scss\");\n\n\n\n\n\nfunction Header() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'header__container' },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar_Navbar_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'header__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", { className: 'header__container__element__title' },\n                \"multichain launchpad incubator for\",\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"br\", null),\n                \"web3 & metaverse\")),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'header__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", { className: 'header__container__element__sub-title' }, \"\\u201C the best way to predict the future is to create it \\u201D\")),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Sponsors_Sponsors_jsx__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Cards_Cards_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Header/Header.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Navbar/Navbar */ \"./src/components/Navbar/Navbar.jsx\");\n/* harmony import */ var _Cards_Cards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Cards/Cards */ \"./src/components/Cards/Cards.tsx\");\n/* harmony import */ var _Sponsors_Sponsors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Sponsors/Sponsors */ \"./src/components/Sponsors/Sponsors.tsx\");\n/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header.scss */ \"./src/components/Header/Header.scss\");\n\n\n\n\n\nfunction Header() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'header__container' },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'header__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", { className: 'header__container__element__title' },\n                \"multichain launchpad incubator for\",\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"br\", null),\n                \"web3 & metaverse\")),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'header__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", { className: 'header__container__element__sub-title' }, \"\\u201C the best way to predict the future is to create it \\u201D\")),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Sponsors_Sponsors__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Cards_Cards__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Header/Header.tsx?");
 
 /***/ }),
 
@@ -225,7 +203,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Buttons_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Buttons.scss */ \"./src/components/Navbar/Buttons/Buttons.scss\");\n\n// import * as  loginIcon from '../../../assets/login-icon.png'\n// import * as walletIcon from '../../../assets/wallet-icon.png'\n\nfunction Buttons() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'buttons__container' },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'buttons__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'buttons__container__element__icon', alt: 'login-icon' }),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"input\", { className: 'buttons__container__element__login', type: 'button', value: 'login' })),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'buttons__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'buttons__container__element__icon', alt: 'wallet-icon' }),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"input\", { className: 'buttons__container__element__wallet', type: 'button', value: 'wallet connect' }))));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Buttons);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Navbar/Buttons/Buttons.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_login_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/login-icon.png */ \"./src/assets/login-icon.png\");\n/* harmony import */ var _assets_wallet_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets/wallet-icon.png */ \"./src/assets/wallet-icon.png\");\n/* harmony import */ var _Buttons_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Buttons.scss */ \"./src/components/Navbar/Buttons/Buttons.scss\");\n\n\n\n\nfunction Buttons() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'buttons__container' },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'buttons__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'buttons__container__element__icon', src: _assets_login_icon_png__WEBPACK_IMPORTED_MODULE_1__, alt: 'login-icon' }),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"input\", { className: 'buttons__container__element__login', type: 'button', value: 'login' })),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'buttons__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'buttons__container__element__icon', src: _assets_wallet_icon_png__WEBPACK_IMPORTED_MODULE_2__, alt: 'wallet-icon' }),\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"input\", { className: 'buttons__container__element__wallet', type: 'button', value: 'wallet connect' }))));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Buttons);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Navbar/Buttons/Buttons.tsx?");
 
 /***/ }),
 
@@ -240,6 +218,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./src/components/Sponsors/Sponsors.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/Sponsors/Sponsors.tsx ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_coindesk_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../assets/coindesk_logo.png */ \"./src/assets/coindesk_logo.png\");\n/* harmony import */ var _assets_forbes_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../assets/forbes_logo.png */ \"./src/assets/forbes_logo.png\");\n/* harmony import */ var _assets_business_insider_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../assets/business_insider_logo.png */ \"./src/assets/business_insider_logo.png\");\n/* harmony import */ var _assets_yahoo_finance_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../assets/yahoo_finance_logo.png */ \"./src/assets/yahoo_finance_logo.png\");\n/* harmony import */ var _Sponsors_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Sponsors.scss */ \"./src/components/Sponsors/Sponsors.scss\");\n\n\n\n\n\n\nfunction Sponsors() {\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'sponsors__container' },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'sponsors__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'sponsors__container__element__logo', src: _assets_coindesk_logo_png__WEBPACK_IMPORTED_MODULE_1__, alt: 'coindesk logo' })),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'sponsors__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'sponsors__container__element__logo', src: _assets_forbes_logo_png__WEBPACK_IMPORTED_MODULE_2__, alt: 'forbes logo' })),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'sponsors__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'sponsors__container__element__insider', src: _assets_business_insider_logo_png__WEBPACK_IMPORTED_MODULE_3__, alt: 'business_insider_logo' })),\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: 'sponsors__container__element' },\n            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", { className: 'sponsors__container__element__yahoo', src: _assets_yahoo_finance_logo_png__WEBPACK_IMPORTED_MODULE_4__, alt: 'yahoo_finance_logo' }))));\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (Sponsors);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/components/Sponsors/Sponsors.tsx?");
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -247,7 +236,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _app_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.jsx */ \"./src/app.jsx\");\n\n\n\nvar root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"root\"));\nroot.render(react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null,\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_app_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app */ \"./src/app.tsx\");\n\n\n\n\nvar root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"root\"));\nroot.render(react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null,\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_app__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null)));\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/index.tsx?");
 
 /***/ }),
 
@@ -499,6 +488,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
+/***/ "../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/index.scss":
+/*!*******************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*******************************************************************************************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"../node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  margin: 0;\\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale; }\\n\\ncode {\\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }\\n\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/index.scss?../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "../node_modules/css-loader/dist/runtime/api.js":
 /*!******************************************************!*\
   !*** ../node_modules/css-loader/dist/runtime/api.js ***!
@@ -609,6 +609,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"../node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"../node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"../node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"../node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./index.scss */ \"../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/index.scss\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\nif (true) {\n  if (!_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals || module.hot.invalidate) {\n    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {\n  if (!a && b || a && !b) {\n    return false;\n  }\n\n  var p;\n\n  for (p in a) {\n    if (isNamedExport && p === \"default\") {\n      // eslint-disable-next-line no-continue\n      continue;\n    }\n\n    if (a[p] !== b[p]) {\n      return false;\n    }\n  }\n\n  for (p in b) {\n    if (isNamedExport && p === \"default\") {\n      // eslint-disable-next-line no-continue\n      continue;\n    }\n\n    if (!a[p]) {\n      return false;\n    }\n  }\n\n  return true;\n};\n    var isNamedExport = !_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals;\n    var oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals;\n\n    module.hot.accept(\n      /*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./index.scss */ \"../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/index.scss\",\n      function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./index.scss */ \"../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./src/index.scss\");\n(function () {\n        if (!isEqualLocals(oldLocals, isNamedExport ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals, isNamedExport)) {\n                module.hot.invalidate();\n\n                return;\n              }\n\n              oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals;\n\n              update(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\n      })(__WEBPACK_OUTDATED_DEPENDENCIES__); }.bind(this)\n    )\n  }\n\n  module.hot.dispose(function() {\n    update();\n  });\n}\n\n\n\n       /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://nftlaunchpad/./src/index.scss?");
+
+/***/ }),
+
 /***/ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!*****************************************************************************!*\
   !*** ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -679,10 +690,10 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /*!****************************************!*\
   !*** ./src/assets/body-background.png ***!
   \****************************************/
-/***/ (function(module) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiOTA5NjM5YmZiNjVlYWFhMjI0ZTc3NWQ4ZGE4YWFkMzUucG5nIjs=\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/body-background.png?");
+eval("module.exports = __webpack_require__.p + \"909639bfb65eaaa224e7.png\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/body-background.png?");
 
 /***/ }),
 
@@ -690,10 +701,10 @@ eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX
 /*!**********************************************!*\
   !*** ./src/assets/business_insider_logo.png ***!
   \**********************************************/
-/***/ (function(module) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZGYxZGRmNjhjM2E1NTM5MTI5MzFjNjlhN2ExNjczNTMucG5nIjs=\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/business_insider_logo.png?");
+eval("module.exports = __webpack_require__.p + \"df1ddf68c3a553912931.png\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/business_insider_logo.png?");
 
 /***/ }),
 
@@ -701,10 +712,32 @@ eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX
 /*!**************************************!*\
   !*** ./src/assets/coindesk_logo.png ***!
   \**************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"2cdf8267ed7de4ed0e4e.png\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/coindesk_logo.png?");
+
+/***/ }),
+
+/***/ "./src/assets/forbes_logo.png":
+/*!************************************!*\
+  !*** ./src/assets/forbes_logo.png ***!
+  \************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"c61f74ccd2bfe6567fa4.png\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/forbes_logo.png?");
+
+/***/ }),
+
+/***/ "./src/assets/login-icon.png":
+/*!***********************************!*\
+  !*** ./src/assets/login-icon.png ***!
+  \***********************************/
 /***/ (function(module) {
 
 "use strict";
-eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiMmNkZjgyNjdlZDdkZTRlZDBlNGUxYzU3OTc4Y2IyNGEucG5nIjs=\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/coindesk_logo.png?");
+eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAQlBMVEVHcEz////////////////////////////////////////////////////////////////////////////////////1bZCPAAAAFXRSTlMAHuiNOkNn84BN1HpYwgedDrEzKHAb7BYXAAABgklEQVRIx73W2bKDIAwAUBZBRdCK+v+/ekVbC5Fo8M40b1SOGZbGMJYN60SNh9N5xV5uuYkxD81yG3POyfBkaI6YrW2id42yXhaRcf36UEzxL1yP4q3cPG1vrjOwWp/baNwe2Zze39flYbtO8d+hinPt0eCw+g7Frng0gwR92A6ezkCgXaeqZAQcBn0yFaz4CjI9WnTFl/Bqq1DYP4PcCP0Ihluqn0C9nCRxjfIkqZtzkuTjgJJ+jkAWXABdxxKHXqVRTS7OiUKJlSN7A9E6Zm7gcFMA8TVWYI1qGoPryne1DbvalB9HF+crgMCR4eaa8rsK81GhhfmocID5CmpO99sq94+6us2V6hGcTt8OIky/ViWXPJn6K+ifQJV0HQUw9DnmFe8x9RzDjRXy3VYNBbAXoG5BOGNXjptLyB16V/vOHP0qgFy7i74z2NceNoZvlWl98oezn+qkx6PKe0b6W/mt8/woMbSMEOEcjfwqSVKgz15z9YwcvP4oVaA2OYjanNQfCEc+XnWjPbwAAAAASUVORK5CYII=\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/login-icon.png?");
 
 /***/ }),
 
@@ -712,10 +745,21 @@ eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX
 /*!*****************************!*\
   !*** ./src/assets/logo.png ***!
   \*****************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"2c2f69b13555324d3c28.png\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/logo.png?");
+
+/***/ }),
+
+/***/ "./src/assets/wallet-icon.png":
+/*!************************************!*\
+  !*** ./src/assets/wallet-icon.png ***!
+  \************************************/
 /***/ (function(module) {
 
 "use strict";
-eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiMmMyZjY5YjEzNTU1MzI0ZDNjMjhlZWIwOTViODBlYmUucG5nIjs=\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/logo.png?");
+eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAP1BMVEVHcEz///////////////////////////////////////////////////////////////////////////////9KjZoYAAAAFHRSTlMADffXQciY82qGKjd3r+dNGlu7ZHum9zUAAAGaSURBVEjH7ZbZloMgDIbZEUREzPs/6yS4dOzp1NCLuep/UzwnXxOyqRB3WmrOLoo+jRVIyvRAxSGig/MAkk8lNIdEgQI4LjRrhFwhnE6868UJTa05cDwzIBnQMK8nHhPAfEutGW2D/I1ryHdJt2hb6S4L4Y7whKfhPukUkSF8iof3t0WgpKt0wZt3964IyyPp6hmf/irClrXxWrMDF/J1EaQ7oFgPiHCfjlCuRZBxRA107WrwgZIOLpbRkPecShk3eciPMMOWpib/9tSaZXc4QaeW1hAY2WLYGtB3aU1ju+Y2bqOkIPXNu25VVxD6MNsw/8U+xuQu2wAeNjrtd+HwGSYWntrSsDDq9imc8qA52ECL8ve6AeBgCv8dU/JYOKAY2EJ3EU7l+fTuGZhDKwpsG7QOTFORWwK7MNWWAHjZg5m2PpKusetuIp9+ejIpZlyW86VnWFjrLV2nXZWWOqsn1+uK9ZE5AXKd7C4Ptnw0puG7gl5h//UO2N44FrTsoebtawh/dBrYwq8JJV/twFuN+/jY7NnS7RtM/ADvqC950f3D3AAAAABJRU5ErkJggg==\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/wallet-icon.png?");
 
 /***/ }),
 
@@ -723,10 +767,10 @@ eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX
 /*!*******************************************!*\
   !*** ./src/assets/yahoo_finance_logo.png ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiNzUwYzhhMDVhNDUwMzJhZDYwNDdkNzc1NWRiZmYxYWUucG5nIjs=\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/yahoo_finance_logo.png?");
+eval("module.exports = __webpack_require__.p + \"750c8a05a45032ad6047.png\";\n\n//# sourceURL=webpack://nftlaunchpad/./src/assets/yahoo_finance_logo.png?");
 
 /***/ })
 
@@ -818,7 +862,7 @@ eval("module.exports = \"data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "dace20462d09db8ac35d"; }
+/******/ 		__webpack_require__.h = function() { return "10afbc316534debbe7b7"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
