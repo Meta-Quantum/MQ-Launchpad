@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.navbar__container{
+    width:90%;
+    @include flex(column, center, center);
+    color:white;
+ 
+    &__element{
+        margin-top: 61px;
+        width:100%;
+        @include flex(row, space-between, center);
+
+  &__logo{
+    width: 260px;
+    height: 130px;
+    margin: 7px 10px 20px 10px;
+    object-fit: contain;
+  }
+
+    }
+
+
+}

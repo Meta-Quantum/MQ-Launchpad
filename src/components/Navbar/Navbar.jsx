@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.scss'
-import Buttons from './Buttons/Buttons'
-import Menu from './Menu/Menu'
+import Buttons from './Buttons/Buttons.tsx'
+import Menu from './Menu/Menu.tsx'
 import logo from '../../assets/logo.png'
 
 function Navbar() {
