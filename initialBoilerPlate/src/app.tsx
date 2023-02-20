@@ -1,5 +1,6 @@
 import React from "react";
 import './App.scss'
+import ApplyLaunchpad from "./components/ApplyLaunchpad/ApplyLaunchpad";
 import CoinTable from "./components/CoinTable/CoinTable";
 import CryptoCarousel from "./components/CryptoCarousel/CryptoCarousel";
 import Header from "./components/Header/Header";
@@ -12,7 +13,8 @@ function App() {
      <Video />
      <CryptoCarousel />
      <CoinTable />
-     App
+     <ApplyLaunchpad />
+  
     </div>
   );
 }
