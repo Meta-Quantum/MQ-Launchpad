@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+.coins__container{
+    @include font ($font-fam, 14px, 500, #ffffff);
+    margin:auto;
+padding: 100px 0px 50px 0px;
+background:linear-gradient(to top,rgba(0, 0, 0, 1), rgba(0,0,0, 0.20), ); 
+gap:10px;
+@include flex(row, space-around, center);
+width:91%;
+color: white;
+
+&__element{
+    margin:225px auto 0px auto;
+    @include flex(row, space-between, center);
+    gap:11px;
+    height:37px; 
+
+&__wrap{
+    border-radius: 40px;
+    @include flex(row, space-between, center);
+   
+    background-color: #333333;
+    height:37px;
+    
+
+   &__symbol{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding:5px;
+   }
+
+   &__name{
+    margin:10px;
+    letter-spacing: 2.8px;
+   }
+
+}
+
+&__change{
+    color: #5dcf9a;
+    letter-spacing: 2.8px;
+}
+
+}
+
+
+
+}
