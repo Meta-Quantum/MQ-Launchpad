@@ -2,12 +2,12 @@
 
 .coins__container{
     @include font ($font-fam, 14px, 500, #ffffff);
-    margin:auto;
+    margin: 0px 87px 0px 87px;
 padding: 100px 20px 50px 20px;
 background:linear-gradient(to top,rgba(0, 0, 0, 1), rgba(0,0,0, 0.20), ); 
 gap:10px;
 @include flex(row, space-around, center);
-width:89%;
+
 color: white;
 
 &__element{
