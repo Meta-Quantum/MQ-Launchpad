@@ -100,3 +100,12 @@ border-bottom-right-radius: 55px;
 }
 
 }
+
+@media screen and (max-width:1671px)  {
+  .table__container__table__rowdata__name{
+     @include flex(column, center, center);
+  }
+    .table__container__table__rowdata__name__photo{
+      margin-right:50px;
+    }
+ }

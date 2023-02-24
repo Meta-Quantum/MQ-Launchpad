@@ -15,13 +15,14 @@ color: white;
     @include flex(row, space-between, center);
     gap:11px;
     height:37px; 
+   
 
 &__wrap{
     border-radius: 40px;
     @include flex(row, space-between, center);
-   
     background-color: #333333;
     height:37px;
+  
     
 
    &__symbol{
@@ -47,4 +48,18 @@ color: white;
 
 
 
+}
+
+
+@media screen and (max-width:1671px)  {
+ .coins__container__element{
+    @include flex(column, space-around, center);
+ }
+
+
+    .coins__container__element__wrap{
+        @include flex(column, space-between, center);
+        background-color: transparent;
+        height:100px;
+    }
 }
