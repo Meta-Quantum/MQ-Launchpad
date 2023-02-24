@@ -13,10 +13,10 @@
         @include flex(row, center, center);
 
         &__element__text{
-            width:80%;
-            padding:50px 46px 98px 46px;
-            height:170px;
-            font-size:24px;
+            width:100%;
+            padding:50px 0px 98px 46px;
+            height:250px;
+            font-size:18px;
         }
 
 
