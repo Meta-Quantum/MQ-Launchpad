@@ -2,8 +2,9 @@
 
 .headerDash__container{
     @include flex(column, center, center);
-    margin: 80px 87px 0px 87px;
+    margin: 80px auto 0px auto;
     margin-top:80px;
+    width:90%;
     background-image: linear-gradient(to left,rgba(0, 0, 0, 0.35), rgba(67,67,67, 0.35), ); 
     border-top-left-radius:55px;
     border-top-right-radius: 55px;

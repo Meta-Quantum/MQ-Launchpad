@@ -7,3 +7,28 @@
 width: 100%;
 gap:96px;
 }
+
+@media screen and (max-width:1671px)  {
+  
+    .menu__container{
+        gap:30px;
+    }
+
+   }
+
+   @media screen and (max-width:1224px)  {
+  
+    .menu__container{
+        gap:10px;
+    }
+
+   }
+
+
+   @media screen and (max-width:1117px)  {
+  
+    .menu__container{
+        display: none;
+    }
+
+   }
