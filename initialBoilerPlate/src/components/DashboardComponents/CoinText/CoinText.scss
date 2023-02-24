@@ -1,0 +1,58 @@
+@import '../../../variables.scss';
+
+
+.coinText__container{
+@include flex(column, center, center);
+margin-top:90px;
+gap:12px;
+
+
+&__element{
+    width:400px;
+    @include flex (column, flex-sta, flex-start);
+   
+
+&__title{
+    margin:0;
+    font-size:22px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+&__number{
+    margin:0;
+    font-size:72px;
+    letter-spacing: 3.6px;
+}
+
+}
+
+&__buttons{
+    @include flex(row, flex-start, flex-start);
+   width:100%;
+   gap:77px;
+   margin-top:60px;
+
+   &__btn{
+    background-image: linear-gradient(to right, #676767, #fff);
+    border: none;
+    border-radius: 27.8px;
+    width: 199px;
+    height: 56px;
+    font-size:19.5px;
+    letter-spacing: 0.98px;
+    text-transform: uppercase;
+   }
+
+   &__link{
+    margin-top:15px;
+    font-size:15.5px;
+    color:white;
+    text-decoration:underline;
+    letter-spacing: 0.78px;
+}
+
+}
+
+
+}
