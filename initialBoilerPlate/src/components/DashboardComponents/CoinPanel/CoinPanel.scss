@@ -109,11 +109,13 @@ width:80%;
 }
 
 &__button{
+    cursor: pointer;
     margin-top:59px;
     position:relative;
     left:37%;
+    color:white;
     top:20px;
-    background-image: linear-gradient(to right, #676767, #fff);
+  background-color: transparent;
     border: none;
     border-radius: 27.8px;
     width: 199px;
@@ -121,6 +123,7 @@ width:80%;
     font-size:19.5px;
     letter-spacing: 0.98px;
     text-transform: uppercase;
+    border: 2px solid white;
 }
 
 }

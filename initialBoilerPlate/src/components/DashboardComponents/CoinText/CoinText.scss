@@ -34,8 +34,10 @@ gap:12px;
    margin-top:60px;
 
    &__btn{
-    background-image: linear-gradient(to right, #676767, #fff);
-    border: none;
+    cursor: pointer;
+background-color: transparent;
+    border: solid 2px white;
+    color: white;
     border-radius: 27.8px;
     width: 199px;
     height: 56px;

@@ -10,11 +10,13 @@
     border-radius:29.5px;
 
     &__btn{
+        cursor: pointer;
         position:relative;
         top:25px;
-        left:40%;
-        background-image: linear-gradient(to right, #676767, #fff);
-        border: none;
+        left:43%;
+background-color: transparent;
+        border: 2px solid white;
+        color:white;
         border-radius: 27.8px;
         width:255px;
         height:56px;

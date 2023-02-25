@@ -42,7 +42,9 @@ height:209px;
 
 &__img{
 margin-top:107px;
-margin-left:64px;
+margin-left: 52px;
+width:267px;
+height:267px;
 }
 
 &__btn{
@@ -50,16 +52,17 @@ margin-left:64px;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: black;
+    color: white ;
     border: none;
     width: 170px;
     height: 40px;
     object-fit: contain;
     border-radius: 25.9px;
-    background-image: linear-gradient(to right, #ffffff, #676767);
     position: relative;
-    top:107px;
+    top:120px;
     left:101px;
+    border: solid 2px #fff;
+    background-color: transparent;
 }
 
 

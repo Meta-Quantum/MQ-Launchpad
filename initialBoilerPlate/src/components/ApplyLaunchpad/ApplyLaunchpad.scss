@@ -33,16 +33,17 @@
         font-size: 20px;
         font-weight: 400;
         letter-spacing: 1px;
-        color: black;
+        color: white;
         border: none;
         width: 305px;
         height: 52px;
         object-fit: contain;
         border-radius: 25.9px;
-        background-image: linear-gradient(to right, #ffffff, #676767);
+        border: solid 2px #fff;
+        background-color: transparent;
         position: relative;
         padding: 10px 0px 10px 0px;
-        top: -60px;
+        top: -30px;
         left:-35%
     }
 
