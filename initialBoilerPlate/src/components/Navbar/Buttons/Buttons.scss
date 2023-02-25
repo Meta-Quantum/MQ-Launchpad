@@ -15,7 +15,7 @@
 
       &__login{
         cursor : pointer;
-        @include font($font-fam, 20px, 400, black);
+        @include font($font-fam, 20px, 400, white);
         border: none;
         width: 154px;
         height: 52px;
@@ -23,12 +23,13 @@
         padding: 10px 50px 15px 50px;
         object-fit: contain;
         border-radius: 25.9px;
-        background-image: $gradient-btns;
+        border: solid 2px #fff;
+        background-color: transparent;
       }
 
       &__wallet{
         cursor : pointer;
-        @include font($font-fam, 20px, 400, black);
+        @include font($font-fam, 20px, 400, white);
         border: none;
         width: 272px;
         height: 52px;
@@ -36,7 +37,8 @@
         padding: 10px 50px 15px 50px;
         object-fit: contain;
         border-radius: 25.9px;
-        background-image: $gradient-btns
+        border: solid 2px #fff;
+        background-color: transparent;
       }
 
     }

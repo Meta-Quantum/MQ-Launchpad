@@ -1,12 +1,12 @@
 import React from 'react'
 import './Footer.scss';
-import logo from '../../assets/logo.png';
+import logoWhite from '../../assets/logo_white.png';
 
 function Footer() {
   return (
     <div className='footer__container'>
 <div className='footer__container__element'>
-<img src={logo} alt='logo' className='footer__container__element__logo'/>
+<img src={logoWhite} alt='logo' className='footer__container__element__logo'/>
 <div className='footer__container__element__wrap'> 
 <div className='footer__container__element__wrap__grid'>
   <p className='footer__container__element__wrap__grid__title'>product</p>
