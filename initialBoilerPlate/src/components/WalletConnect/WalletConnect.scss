@@ -1,0 +1,96 @@
+@import '../../variables.scss';
+
+
+.modal__container{
+    @include flex (column, center, center);
+    height:800px;
+    width: 668px;
+    margin: 200px auto 0px auto;
+    @include font ($font-fam, 16px, 400, #000000);
+
+   &__header {
+    width:100%;
+    @include flex (row, space-between, center);
+
+    &__close{
+        border: none;
+        border-radius: 50%;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding:5px 8px;
+        cursor: pointer;
+
+
+    }
+
+  &__img{
+    width:195px;
+    height:42px;
+  }
+   }
+
+   &__element{
+    @include flex (column, center, center);
+    background-color: #ffffff;
+    border-radius:30px;
+    height:668px;
+    width: 668px;
+    margin-top: 20px;
+
+    &__switch{
+        background: #e3e3e3;
+        width:487px;
+        height: 43px;
+        @include flex(row, space-between, center);
+        border-radius: 21.5px;
+        padding: 6px 17px 5px 17px;
+
+        &__qr-btn{
+            letter-spacing: 0.8px;;
+            color: #5e5e5e;
+            font-size: 16px;
+            cursor: pointer;
+            width:193px;
+            height:32px;
+            background: #ffffff;
+            border-radius: 16px;
+            border:none;
+        }
+
+        &__desktop{
+            letter-spacing: 0.8px;;
+            color: #5e5e5e;
+            font-size: 16px;
+            cursor: pointer;
+            width:193px;
+            height:32px;
+            border:none;
+            background: #e3e3e3;
+
+
+        }
+
+    }
+
+    &__qr{
+        @include flex(column, center, center);
+       
+        &__text{
+            color:#c7c7c7;
+            font-size: 16px;
+            letter-spacing: 0.8px;
+        }
+
+
+        &__img{
+      
+            height: 415px;
+            width:415px;
+        }
+    }
+   }
+
+
+
+
+}
