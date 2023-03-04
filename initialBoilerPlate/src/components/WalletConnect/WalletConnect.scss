@@ -1,6 +1,10 @@
 @import '../../variables.scss';
 
 
+.hide{
+    display: hidden;
+}
+
 .modal__container{
     @include flex (column, center, center);
     height:800px;
@@ -30,14 +34,17 @@
    }
 
    &__element{
-    @include flex (column, center, center);
+    @include flex (column, start, center);
     background-color: #ffffff;
     border-radius:30px;
     height:668px;
     width: 668px;
     margin-top: 20px;
 
+   
+
     &__switch{
+        margin-top:38px;
         background: #e3e3e3;
         width:487px;
         height: 43px;
@@ -52,9 +59,17 @@
             cursor: pointer;
             width:193px;
             height:32px;
+            border:none;
+            background: #e3e3e3;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .active{
             background: #ffffff;
             border-radius: 16px;
-            border:none;
         }
 
         &__desktop{
@@ -72,8 +87,13 @@
 
     }
 
+    .hide{
+        display: none;
+    }
+
     &__qr{
         @include flex(column, center, center);
+        
        
         &__text{
             color:#c7c7c7;
@@ -88,6 +108,50 @@
             width:415px;
         }
     }
+
+
+   &__desktop{
+    @include flex(column, center, center);
+    margin-top:34px;
+
+    &__text{
+        color:#c7c7c7;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+
+    &__input{
+        margin-top:29px;
+        width:487px;
+        height:33px;
+        border-radius: 16.5px;
+        background-color: #e3e3e3;
+        border:none;
+        padding: 5px 10px 5px 10px;
+        color:#b4b4b4;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+
+
+    &__wallets{
+        @include grid(1fr 1fr 1fr 1fr, 1, 66px);
+        margin-top:39px;
+        
+    
+    &__img{
+        width:72px;
+        height:72px;
+        background-color: #d9d9d9;
+        border-radius:10px;
+        padding:10px;
+    }
+    
+    
+    }
+   }
+
+
    }
 
 
