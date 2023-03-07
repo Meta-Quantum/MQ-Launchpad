@@ -10,7 +10,7 @@ function App() {
     <div className="App">
      <RouterProvider  router={routes} />
      <Footer />
-<WalletConnect />
+
     </div>
   );
 }
