@@ -11,6 +11,7 @@ import React, {useRef} from 'react'
 
 function WalletConnect(props:any) {
 
+  const modalRef = useRef(null);
 
 
 const desktopRef:any = useRef();
@@ -34,14 +35,21 @@ desktopContainerRef.current.classList.add('hide')
 
 
   return (
+
+
     <>
       {props.showModal ? (
-        <div className='backDrop' onClick={() => {
-          if (props.showModal === true) {
-              props.setShowModal(false);
+        <div className='backDrop' 
+        onClick={(e) => {
+          if (modalRef.current.contains(e.target)) {
+            console.log('not touched')
+            return;
           }
-        }}>
-    <div className='modal__container'>
+          console.log("touched")
+          props.setShowModal(false);
+        }}
+       >
+    <div className='modal__container'  ref={modalRef}>
      <div className='modal__container__header'>
         <img src={logo} alt="meta-logo" className='modal__container__header__img' />
         <input type='button'className='modal__container__header__close' value='X' onClick = {() => props.setShowModal(false)} />
