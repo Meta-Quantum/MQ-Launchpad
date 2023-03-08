@@ -3,7 +3,7 @@ import loginIcon from '../../../assets/login-icon.png'
 import walletIcon from '../../../assets/wallet-icon.png'
 import './Buttons.scss'
 import { useNavigate } from 'react-router'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import WalletConnect from '../../WalletConnect/WalletConnect';
 
 function Buttons() {
@@ -12,6 +12,14 @@ function Buttons() {
 const redirectDashboard= () =>  navigate('/dash')
 const [showModal, setShowModal] = useState(false)
 const openModal = ()  => setShowModal(true)
+
+useEffect(() => {
+  if (showModal === true) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'unset'
+  }
+}, [showModal])
 
 
   return (
