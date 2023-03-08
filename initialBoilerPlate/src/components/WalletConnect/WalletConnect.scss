@@ -5,7 +5,25 @@
     display: hidden;
 }
 
+.backDrop{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}
+
+
+
 .modal__container{
+    position: sticky;
+    right: 35%;
     @include flex (column, center, center);
     height:800px;
     width: 668px;

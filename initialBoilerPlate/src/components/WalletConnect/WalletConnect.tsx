@@ -9,9 +9,10 @@ import walletConnect from '../../assets/wallets/walletConnect.png'
 
 import React, {useRef} from 'react'
 
-function WalletConnect() {
+function WalletConnect(props:any) {
 
-  // const switchDesktop = (event:any) => event.target.classList.add('active')
+  const modalRef = useRef(null);
+
 
 const desktopRef:any = useRef();
 const qrRef:any = useRef();
@@ -34,10 +35,24 @@ desktopContainerRef.current.classList.add('hide')
 
 
   return (
-    <div className='modal__container'>
+
+
+    <>
+      {props.showModal ? (
+        <div className='backDrop' 
+        onClick={(e) => {
+          if (modalRef.current.contains(e.target)) {
+            console.log('not touched')
+            return;
+          }
+          console.log("touched")
+          props.setShowModal(false);
+        }}
+       >
+    <div className='modal__container'  ref={modalRef}>
      <div className='modal__container__header'>
         <img src={logo} alt="meta-logo" className='modal__container__header__img' />
-        <input type='button'className='modal__container__header__close' value='X' />
+        <input type='button'className='modal__container__header__close' value='X' onClick = {() => props.setShowModal(false)} />
      </div>
 
       <div className='modal__container__element'>
@@ -48,12 +63,12 @@ desktopContainerRef.current.classList.add('hide')
 </div>
 
 
-       <div className='modal__container__element__qr hide' ref={qrContainerRef}>
+       <div className='modal__container__element__qr ' ref={qrContainerRef}>
        <p className='modal__container__element__qr__text'>Scan the QR code within a WalletConnect compatible wallet</p>
        <img src={qrCode} alt='qr-code' className='modal__container__element__qr__img' />
        </div>
 
-<div ref={desktopContainerRef} className='modal__container__element__desktop '>
+<div ref={desktopContainerRef} className='modal__container__element__desktop hide'>
 <p className='modal__container__element__desktop__text'>
 Choose your preferred wallet:
 </p>
@@ -65,12 +80,13 @@ Choose your preferred wallet:
 <img src={walletConnect} alt='walletConnect' className='modal__container__element__desktop__wallets__img' />
 </div>
 </div>
-
-
       </div>
-
-
     </div>
+    </div>
+     ) : (
+        <></>
+      )}
+    </>
   )
 }
 
