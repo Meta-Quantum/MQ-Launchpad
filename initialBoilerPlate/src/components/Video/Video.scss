@@ -2,12 +2,12 @@
  
 .video__container{
     margin: 0px 87px 0px 87px;
-    background:linear-gradient(to bottom,rgba(0, 0, 0, 1), rgba(0,0,0, 0.20), ); 
+    background:linear-gradient(to top,rgba(0, 0, 0, 1), rgba(0,0,0, 0.20), ); 
     @include flex (column, center, center);
     
 &__element{
     margin-top: 170px;
-    background-image:linear-gradient(to bottom, #360033, #0b8793);
+    background-image:linear-gradient(to top, #360033, #0b8793);
     @include font($font-fam, 400, 12px, white);
     width:367px;
     height: 749px;
@@ -62,7 +62,16 @@ height:267px;
     top:120px;
     left:101px;
     border: solid 2px #fff;
-    background-color: transparent;
+   background:linear-gradient(white,white);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        transition:ease-in-out 0.5s;
+        &:hover{
+          background-size: 100% 100%;
+          color: black;
+          scale:1.1;
+          transition: ease-in-out 0.5s;
+        }
 }
 
 
