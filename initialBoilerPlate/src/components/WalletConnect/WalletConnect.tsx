@@ -5,14 +5,52 @@ import metamask from '../../assets/wallets/metamask.png'
 import trustWallet from '../../assets/wallets/trustWallet.png'
 import coinbase from '../../assets/wallets/coinbase.png'
 import walletConnect from '../../assets/wallets/walletConnect.png'
+import {injected} from '../../api/metaMaskConnector'
+import { useWeb3React } from "@web3-react/core"
+import { useNavigate } from 'react-router'
 
 
-import React, {useRef} from 'react'
+
+
+import React, {useRef, useState, useEffect} from 'react'
 
 function WalletConnect(props:any) {
 
-  const modalRef = useRef(null);
+  const {active, account, library, connector, activate, deactivate} = useWeb3React()
+  const [loggedAccount, setLoggedAccount] = useState('')
+  const navigate = useNavigate()
 
+
+  useEffect(() => {
+    setLoggedAccount(account)
+    console.log(loggedAccount)
+    localStorage.setItem('account', loggedAccount)
+  }, [connect])
+  
+     async function connect() {
+      try{
+        await activate(injected)
+        console.log('Connected')
+      }
+      catch(e) {
+        console.log(e)
+      }
+    }
+  
+    async function disconnect() {
+      try{
+        await deactivate()
+        console.log('Disconnected')
+      }
+      catch(e) {
+        console.log(e)
+      }
+    }
+
+
+// Nodal refs for manipulating the modal
+
+  const modalRef = useRef(null);
 
 const desktopRef:any = useRef();
 const qrRef:any = useRef();
@@ -32,6 +70,7 @@ desktopRef.current.classList.remove('active')
 qrContainerRef.current.classList.remove('hide')
 desktopContainerRef.current.classList.add('hide')
 }
+
 
 
   return (
@@ -74,7 +113,7 @@ Choose your preferred wallet:
 </p>
 <input type='text' className='modal__container__element__desktop__input' placeholder='search' />
 <div className='modal__container__element__desktop__wallets'>
-<img src={metamask} alt='metamask' className='modal__container__element__desktop__wallets__img' />
+<img src={metamask} alt='metamask' className='modal__container__element__desktop__wallets__img' onClick={connect} />
 <img src={trustWallet} alt='trustWallet' className='modal__container__element__desktop__wallets__img' />
 <img src={coinbase} alt='coinbase' className='modal__container__element__desktop__wallets__img' />
 <img src={walletConnect} alt='walletConnect' className='modal__container__element__desktop__wallets__img' />

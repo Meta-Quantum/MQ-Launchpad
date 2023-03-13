@@ -101,7 +101,7 @@ function Slider() {
     </div>
 </div>
 
-<button className='coins__container__btn'>View all our projects</button>
+<button className='coins__container__btn'>view all our projects</button>
     </div>
   )
 }

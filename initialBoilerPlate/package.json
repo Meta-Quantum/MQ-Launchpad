@@ -14,7 +14,10 @@
     "@types/react-overlays": "^3.1.0",
     "@types/react-slick": "^0.23.10",
     "@types/styled-components": "^5.1.26",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
     "css-loader": "^6.7.3",
+    "ethers": "^5.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-overlays": "^5.2.1",
@@ -24,7 +27,8 @@
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
-    "styled-components": "^5.3.8"
+    "styled-components": "^5.3.8",
+    "web3": "^1.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
