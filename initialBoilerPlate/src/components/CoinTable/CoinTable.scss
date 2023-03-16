@@ -21,11 +21,25 @@ border-bottom-right-radius: 55px;
         font-size: 20px;
         letter-spacing: 4px;
         color:white;
+        cursor:pointer;
+        background:linear-gradient(to left, #360033, #0b8793);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        transition:ease-in-out 0.5s;
+        padding:20px;
+        border-radius:29.5px;
+        &:hover{
+          background-size: 100% 100%;
+          scale:1.1;
+          transition: ease-in-out 0.5s;
+        }
     }
 
     &__bar{
         @include flex(row, space-between, center);
         gap:16px;
+     
+    
 
   &__icon
   {
@@ -45,6 +59,13 @@ border-bottom-right-radius: 55px;
     border:none;
     border-bottom: 2px solid white !important;
     font-size: 18px;
+    transition: ease-in-out 0.5s;
+    &:focus{
+      background-color: white;
+      color: black;
+      border-radius:29.5px;
+      padding:10px;
+    }
   }
     }
   }
