@@ -1,7 +1,15 @@
 import React from 'react'
 import './Menu.scss'
+import { useNavigate } from 'react-router'
 
 function Menu() {
+
+    const navigate = useNavigate()
+
+    const redirectPortofolio = () => {
+        navigate('/projects')
+    }
+
   return (
     <div className='menu__container'>
        
@@ -11,12 +19,12 @@ function Menu() {
         </div>
        {/* portfolio */}
        <div className='menu__container__element'>
-            <p className='menu__container__element__link'>portfolio</p>
+            <p className='menu__container__element__link' onClick={redirectPortofolio}>portfolio</p>
         </div>
     {/* blogs */}
     <div className='menu__container__element'>
             <p className='menu__container__element__link'>blogs</p>
-        </div>
+        </div> 
       {/* investor relations */}
       <div className='menu__container__element'>
             <p className='menu__container__element__link'>investor relations</p>

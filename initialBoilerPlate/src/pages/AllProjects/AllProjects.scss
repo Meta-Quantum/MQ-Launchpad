@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+
+
+.projects__container{
+@include flex(column, center, center);
+ margin: 20px 87px 0px 87px;
+ gap:200px;
+
+ &__title{
+     @include font($font-fam, 40px, 600, white);
+     letter-spacing: 3px;
+ }
+
+ .raisers{
+    padding:50px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 29.5px;
+ }
+
+ &__element{
+        @include flex(column, center, center);
+        gap:30px;
+
+        &__title{
+            @include font($font-fam, 30px, 600, white);
+            letter-spacing: 3px;
+     }
+    
+     &__subtitle{
+            @include font($font-fam, 15px, 400, white);
+            letter-spacing: 3px;
+     }
+ }
+
+
+
+&__content{
+    margin-top:50px;
+display:grid;
+grid-template-columns: auto auto auto auto;
+gap:30px;
+
+ 
+
+
+}
+}

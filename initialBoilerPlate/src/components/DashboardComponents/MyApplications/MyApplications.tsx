@@ -9,12 +9,14 @@ function MyApplications() {
      <table className='apps__container__table'>
         <tr className='apps__container__table__row__head'>
             <th className='apps__container__table__row__head__name'>Project Name</th>
+            <th className='apps__container__table__row__head__name'>Tokkens</th>
             <th className='apps__container__table__row__head__date'>Sale Date</th>
             <th className='apps__container__table__row__head__status'>Status</th>
         </tr>
             {applicationsData.map((app =>(
                 <tr className='apps__container__table__row__data'>
                 <td className='apps__container__table__row__data__name'>{app.name}</td>
+                <td className='apps__container__table__row__data__name'>{app.value}</td>
                 <td className='apps__container__table__row__data__date'>{app.saleDate}</td>
                 <td className='apps__container__table__row__data__status'>{app.status}
                 <input type="button" value="Claim" className='apps__container__table__row__data__status__btn'/>

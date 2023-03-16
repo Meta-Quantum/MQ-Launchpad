@@ -1,0 +1,130 @@
+@import '../../variables.scss';
+
+.project{
+@include flex(column, center, center);
+letter-spacing: 0.5px;
+@include font($font-fam, 20px, 400, white);
+gap: 100px;
+
+
+&__name{
+margin: auto;
+@include font($font-fam, 30px, 600, white);
+}
+
+&__btn{
+@include font($font-fam, 20px, 400, white);
+height:50px;
+margin-top:-70px;
+cursor:pointer;
+width:738px;
+object-fit: contain;
+border: solid 2px #fff;    
+padding:0px 50px 0px 50px;  
+object-fit: contain;
+border-radius: 20px;
+border: solid 2px #fff;
+background:linear-gradient(to left, #360033, #0b8793);
+background-size: 0 100%;
+background-repeat: no-repeat;
+transition:ease-in-out 0.5s;
+border-radius:29.5px;
+&:hover{
+    background-size: 100% 100%;
+    scale:1.1;
+    transition: ease-in-out 0.5s;
+}
+}
+
+&__description{
+@include font($font-fam, 20px, 400, white);
+margin: auto;
+width: 50%;
+text-align: center;
+line-height:30px;
+letter-spacing: 0.5px;
+}
+
+&__container{
+@include flex(row, center, column);
+width:70%;
+margin: auto;
+
+
+&__element{
+@include flex(column, center, center);
+transition: ease-in-out 0.5s;
+&:hover{
+    transition: ease-in-out 0.5s;
+    scale:1.2;
+    margin:0px 40px 30px 40px;
+}
+
+
+
+&__image{
+@include flex(column, center, center);
+border-top-left-radius: 20px;
+border-bottom-left-radius:20px;
+width:348px;
+height:500px;
+margin: 0px auto 0px auto;
+background-color: rgba(0,0,0,0.4);
+padding: 10px;
+
+&__title{
+@include font($font-fam, 20px, 400, white);
+}
+
+&__img{
+width:240px;
+height:50px;
+}
+}
+
+&__content{
+@include flex(column, space-around, center);
+border-top-right-radius: 20px;
+border-bottom-right-radius:20px;
+width:348px;
+height:500px;
+margin: 0px auto 0px auto;
+background-image: linear-gradient(225deg, #360033, #0b8793);
+padding:10px;
+
+&__pitch{
+font-size: 30px;
+font-weight:600;
+}
+
+&__coin{
+font-size: 20px;
+margin-top:-25px;
+color: #9a9a9a;
+}
+
+&__fundRaise{
+@include flex(row, space-between, center);
+width:320px;
+margin-top:-10px;
+font-size: 18px;
+  }
+
+&__allocation{
+@include flex(row, space-between, center);
+width:320px;
+margin-top:-10px;
+font-size: 18px;
+  }
+
+}
+
+
+
+}
+
+
+
+
+}
+}

@@ -7,10 +7,11 @@ import {useState, useEffect} from 'react'
 import WalletConnect from '../../WalletConnect/WalletConnect';
 import Web3 from 'web3'
 import { Web3ReactProvider } from '@web3-react/core'
+import { useWeb3React } from "@web3-react/core"
 
 
 function Buttons() {
-
+  const {deactivate} = useWeb3React()
   function getLibrary(provider:any) {
     return new Web3(provider)
   }
@@ -29,6 +30,18 @@ useEffect(() => {
   }
 }, [showModal])
 
+async function disconnect() {
+  try{
+  await deactivate()
+   console.log('Disconnected')
+   localStorage.clear();
+   navigate('/')
+   }
+  catch(e) {
+   console.log(e)
+   }
+   }
+
 
   return (
     
@@ -38,8 +51,11 @@ useEffect(() => {
             <input className='buttons__container__element__login' type='button' value='login' onClick={redirectDashboard}/>
         </div>
         <div className='buttons__container__element'>
-          { (loggedAccount) ?  <span>{loggedAccount}</span> :
-            <input className='buttons__container__element__wallet' type='button' value='wallet connect' onClick={openModal} />
+          { (loggedAccount != null) ?  <div>
+            <span>{loggedAccount}</span>
+            <br/>
+            <input className='buttons__container__element__wallet' type='button' value='disconnect' onClick={disconnect} ></input>
+            </div> : <input className='buttons__container__element__wallet' type='button' value='wallet connect' onClick={openModal} />
           }
            
         </div>
