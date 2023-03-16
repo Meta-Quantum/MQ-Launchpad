@@ -1,4 +1,5 @@
 import React, {useRef, useState, useEffect} from 'react'
+import {useUpdateEffect} from 'react-use'
 import './WalletConnect.scss'
 import logo from '../../assets/logo_white.png'
 import qrCode from '../../assets/QR-code.png'
@@ -15,29 +16,30 @@ function WalletConnect(props:any) {
 
 const {active, account, library, connector, activate, deactivate} = useWeb3React()
 const [loggedAccount, setLoggedAccount] = useState('')
+const [isConnected, setIsConnected] = useState(false)
 const navigate = useNavigate()
 
+useUpdateEffect(() => {
+  console.log( "account",account)
+  setLoggedAccount( account)
+  localStorage.setItem('account', account)
+  navigate('/dash')
+}, [isConnected])
 
-useEffect(() => {
-setLoggedAccount(account)
-console.log("account",account)
-console.log("loggedAccount",loggedAccount)
-localStorage.setItem('account', loggedAccount)
-}, [{connect}])
   
 async function connect() {
   try{
    await activate(injected)
    console.log('Connected')
+   console.log('connect',account)
+   setIsConnected(true)
+
    }
   catch(e) {
    console.log(e)
    }
    }
   
-
-
-
 // Nodal refs for manipulating the modal
 
 const modalRef = useRef(null);

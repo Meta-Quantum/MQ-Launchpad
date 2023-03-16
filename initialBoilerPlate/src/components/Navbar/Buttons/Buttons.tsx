@@ -47,13 +47,15 @@ async function disconnect() {
     
     <div className='buttons__container'>
         <div className='buttons__container__element'>
-          
-            <input className='buttons__container__element__login' type='button' value='login' onClick={redirectDashboard}/>
+        { (loggedAccount != null) ?  <input className='buttons__container__element__dashboard' type='button' value='dashboard' onClick={redirectDashboard}/> :
+           <input className='buttons__container__element__login' type='button' value='login' />
+          }
+            
         </div>
         <div className='buttons__container__element'>
-          { (loggedAccount != null) ?  <div>
-            <span>{loggedAccount}</span>
-            <br/>
+          { (loggedAccount != null) ?  <div className='buttons__container__element__connected'>
+            <span className='buttons__container__element__connected__address'>{loggedAccount}</span>
+           
             <input className='buttons__container__element__wallet' type='button' value='disconnect' onClick={disconnect} ></input>
             </div> : <input className='buttons__container__element__wallet' type='button' value='wallet connect' onClick={openModal} />
           }

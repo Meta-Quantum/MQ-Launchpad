@@ -19,7 +19,7 @@ function CardsContainer() {
  <div className='cards__container'>
   {
     upcomingData.map((item:any) => (
-      <Card props={item}/>
+      <Card item={item}/>
     ))
   }
     </div>

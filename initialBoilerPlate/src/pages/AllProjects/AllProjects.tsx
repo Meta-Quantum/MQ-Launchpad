@@ -15,7 +15,7 @@ function AllProjects() {
 <h3 className='projects__container__element__title'>this month's best performers</h3>
 <p className='projects__container__element__subtitle'>We keep you updated with the projects you need to keep an eye on...</p>
 <div className='projects__container__content'>
-        {upcomingData.map((item:any) => (<Cards props={item}/>))}
+        {upcomingData.map((item:any) => (<Cards item={item}/>))}
     </div>
 </div>
         
@@ -24,7 +24,7 @@ function AllProjects() {
 <h3 className='projects__container__element__title'>Feeling like exploring...</h3>
 <p className='projects__container__element__subtitle'>Look below through all of our projects</p>
 <div className='projects__container__content'>
-        {projectsData.map((item:any) => (<Cards props={item}/>))}
+        {projectsData.map((item:any) => (<Cards item={item}/>))}
 
     </div>
 </div>
