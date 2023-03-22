@@ -1,8 +1,16 @@
 import React from 'react'
 import rocket from '../../assets/rocket.png'
 import './ApplyLaunchpad.scss'
+import { useNavigate } from 'react-router'
 
 function ApplyLaunchpad() {
+
+  const navigate = useNavigate()
+
+  const redirectKyc = () => {
+    navigate('/kyc')
+  }
+
   return (
     <div className='apply__container'>
         <div className='apply__container__wrap'>
@@ -10,10 +18,6 @@ function ApplyLaunchpad() {
     <p className='apply__container__wrap__element__text__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna 
         aliqua. Est lorem ipsum dolor sit amet. Sed adipiscing 
-        {/* diam donec adipiscing tristique. Dolor purus non enim praesent 
-        elementum facilisis leo vel fringilla. Mi sit amet mauris commodo 
-        quis imperdiet massa tincidunt nunc. Et egestas quis ipsum suspendisse 
-        ultrices.</p> */}
         </p>
 </div>
 
@@ -25,7 +29,7 @@ function ApplyLaunchpad() {
         </div>
 
 
-<input className='apply__container__btn' type='button' value='apply to launchpad' />
+<input className='apply__container__btn' type='button' value='apply to launchpad' onClick={redirectKyc} />
     </div>
   )
 }
