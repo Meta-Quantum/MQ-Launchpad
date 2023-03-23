@@ -1,10 +1,13 @@
-import React, {useRef} from "react"
+import React, { useEffect, useRef, useState } from 'react';
+
 import "./Kyc.scss"
 import Navbar from "../../components/Navbar/Navbar"
 
-
 const Kyc = () => {
 
+    const [formData, setFormData] = useState(null); 
+    //const formData: { [key: string]: string } = {};
+      
     const group:any = useRef()
     const group2:any = useRef()
     const group3:any = useRef()
@@ -12,21 +15,46 @@ const Kyc = () => {
     const item2:any = useRef()
     const item3:any = useRef()
 
+    const saveFormData = (form: { querySelectorAll: (arg0: string) => any; }) => {
+
+        const inputs = form.querySelectorAll("input");
+        inputs.forEach((input: { name: string; value: string; }) => {
+            if(input.name){
+                formData[input.name] = input.value;
+            }
+        });
+        localStorage.setItem("formData", JSON.stringify(formData));
+    }
+
+    useEffect(() => {
+        const storedFormData = JSON.parse(localStorage.getItem("formData"));
+        if (storedFormData) {
+          setFormData(storedFormData);
+        }
+      }, []);
+
     const handleClickPhase1 = () => {
+
         group.current.classList.add('hide')
         group2.current.classList.remove('hide')
         item1.current.classList.remove('active')
         item2.current.classList.add('active')
-    }
+        
+        saveFormData(group.current)
+       
+      };
+      
+    const handleClickPhase2 = (event: { preventDefault: () => void; }) => {
 
-    const handleClickPhase2 = () => {
         group2.current.classList.add('hide')
         group3.current.classList.remove('hide')
         item2.current.classList.remove('active')
         item3.current.classList.add('active')
-    }
 
-
+        saveFormData(group2.current)
+        
+    }      
+      
     return(
         <>
         <Navbar />
@@ -42,9 +70,9 @@ const Kyc = () => {
                 <h3 className="container__KYC__form__group__wrap__title">Start Application</h3>
                 <h5 className="container__KYC__form__group__wrap__subtitle">Blockchain project applications ONLY</h5>
                 </div>
-                < input className="container__KYC__form__group__input" type="text" placeholder="Your name" />
-                < input className="container__KYC__form__group__input" type='email' placeholder='Your email' />
-                < input className="container__KYC__form__group__input" type="text" placeholder='Your telegram handle' />
+                < input className="container__KYC__form__group__input" name = "name" type="text" placeholder="Your name" />
+                < input className="container__KYC__form__group__input" name = "email" type='email' placeholder='Your email' />
+                < input className="container__KYC__form__group__input" name = "telegram" type="text" placeholder='Your telegram handle' />
                 < input className="container__KYC__form__group__input" type="90password" placeholder='Password' />
                 <span>6 characters minimum</span>
                 < input className="container__KYC__form__group__input" type="password" placeholder='Confirm password' />
@@ -53,15 +81,15 @@ const Kyc = () => {
 
                 <div ref={group2} className="container__KYC__form__group hide">
                 <h3 className="container__KYC__form__group__title">Project Details</h3>
-                <input className="container__KYC__form__group__input" type="text" placeholder='Project name' />
-                <input className="container__KYC__form__group__input" type="text" placeholder='Project website' />
-                <input className="container__KYC__form__group__input" type="text" placeholder='Project description' />
+                <input className="container__KYC__form__group__input" name = "projectName" type="text" placeholder='Project name' />
+                <input className="container__KYC__form__group__input" name = "projectWebsite" type="text" placeholder='Project website' />
+                <input className="container__KYC__form__group__input" name = "projectDescription" type="text" placeholder='Project description' />
                 <label>Upload your project's white paper:</label>
                 <input className="container__KYC__form__group__input" type='file' />
-                <input className="container__KYC__form__group__input" type='number' placeholder='Project token price' />
-                <input className="container__KYC__form__group__input" type='number' placeholder='Project token supply' />
-                <input className="container__KYC__form__group__input" type='number' placeholder='Project token sale cap' />
-                <input className="container__KYC__form__group__input" type='date' placeholder='Project token sale start date' />
+                <input className="container__KYC__form__group__input" name = "tokenPrice" type='number' placeholder='Project token price' />
+                <input className="container__KYC__form__group__input" name = "tokenSupply" type='number' placeholder='Project token supply' />
+                <input className="container__KYC__form__group__input" name = "tokenCap" type='number' placeholder='Project token sale cap' />
+                <input className="container__KYC__form__group__input" name = "startDate" type='date' placeholder='Project token sale start date' />
                 <input onClick={handleClickPhase2} className="container__KYC__form__group__btn" type='button' value='Submit' />
                </div>
 
