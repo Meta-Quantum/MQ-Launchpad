@@ -1,22 +1,26 @@
 import React, { useRef, useState, useEffect} from 'react';
-
+import { VALIDATION_REGEXES } from '../../utilities/ValidationRegex';
 import "./Kyc.scss"
 import Navbar from "../../components/Navbar/Navbar"
 import JRSInput from '../../components/Input/JRSInput';
 const Kyc = () => {
+  
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        telegram: '',
-        projectName: '',
-        projectWebsite: '',
-        projectDescription: '',
-        tokenPrice: '',
-        tokenSupply: '',
-        tokenCap: '',
-        startDate: '',
-      });
+  const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      telegram: '',
+      projectName: '',
+      projectWebsite: '',
+      projectDescription: '',
+      tokenPrice: '',
+      tokenSupply: '',
+      tokenCap: '',
+      startDate: '',
+    });
 
     const group:any = useRef()
     const group2:any = useRef()
@@ -25,27 +29,24 @@ const Kyc = () => {
     const item2:any = useRef()
     const item3:any = useRef()
 
-    const firstNameRef = useRef(null);
-
     const handleClickPhase1 = async (e: { preventDefault: () => void; }) => {
-        e.preventDefault();
+
         if(!isValid()) return;
         group.current.classList.add('hide')
         group2.current.classList.remove('hide')
         item1.current.classList.remove('active')
         item2.current.classList.add('active')
-       
         localStorage.setItem('formData', JSON.stringify(formData));
-       
     }
 
-    const handleClickPhase2 = (event: { preventDefault: () => void; }) => {
+    const handleClickPhase2 = async (e: { preventDefault: () => void; }) => {
+
         group2.current.classList.add('hide')
         group3.current.classList.remove('hide')
         item2.current.classList.remove('active')
         item3.current.classList.add('active')
-        event.preventDefault();
         localStorage.setItem('formData', JSON.stringify(formData));
+
     }
     const handleInputChange = (event: { target: { name: any; value: any; }; }) => {
       const { name, value } = event.target;
@@ -59,16 +60,12 @@ const Kyc = () => {
         }
       }, []);
 
-      const focusFirstInvalid = () => {
-        if (firstNameRef.current.focusNotValidated()) return;
-      }
       function isValid(){
-        firstNameRef.current.wasTouched
-        focusFirstInvalid();
-        const valid = firstNameRef.current.error
+        group.current.wasTouched
+        const valid = group.current.error
         return !valid;
       }
-
+   
     return(
         <>
         <Navbar />
@@ -85,38 +82,42 @@ const Kyc = () => {
                 <h5 className="container__KYC__form__group__wrap__subtitle">Blockchain project applications ONLY</h5>
                 </div>
                 <JRSInput
-                  ref={firstNameRef}
-                  inputVal={formData?.name}
                   placeHolder= "Your name"
                   validate={{
                     required: "First name field can't be empty",
                   }}
                 />
                 <JRSInput
-                  inputVal={formData?.email}
                   placeHolder= "Email"
                   validate={{
                     required: "Email field can't be empty",
+                    pattern: [VALIDATION_REGEXES.emailRegex, "Email address not valid"]
                   }}
                 />
                 <JRSInput
-                  inputVal={formData?.telegram}
                   placeHolder= "Telegram handle"
                 />
                 <JRSInput
-                  type = "90password"
-                  placeHolder= "Enter a password"
+                  type="password"
+                  placeHolder= "Enter password"
+                  onChange={(event) => setPassword(event.target.value)}
                   validate={{
-                    required: "Password field can't be empty",
+                    required: "Password can't be empty",
+                    pattern: [VALIDATION_REGEXES.passwordRegex, "Password not valid: It must be 10 characters long, at least one capital letter, one number and one special character from the set !-?%&<>£$;^."]
                   }}
                 />
-                  <span>6 characters minimum</span>
-                  <JRSInput
+                <JRSInput
+                  type="password"
                   placeHolder= "Confirm password"
+                  onChange={(event) => setConfirmPassword(event.target.value)}
                   validate={{
                     required: "Password confirmation can't be empty",
+                    match: [
+                      (value) => value === password,
+                      "The two passwords don't match.",
+                      ]
                   }}
-                />
+              />
                   <input onClick={handleClickPhase1} className="container__KYC__form__group__btn" type='button' value='Next' />
                </div>
          
