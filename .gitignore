@@ -33,3 +33,6 @@ env/.env.production.local
 /config/codegen/codegen.with.url.yml
 
 changelog_vars.json
+src/pages/Kyc/Kyc.css
+src/pages/Kyc/Kyc.css.map
+src/typing.d.ts
