@@ -2,7 +2,6 @@ import React from "react";
 import "./Card.scss";
 import logoWhite from "../../assets/logo_white.png";
 import { Link } from "react-router-dom";
-import { access } from "fs";
 
 function Card({ item }: any) {
   console.log(item);

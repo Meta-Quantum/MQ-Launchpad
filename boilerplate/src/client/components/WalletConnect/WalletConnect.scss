@@ -1,0 +1,155 @@
+@import "../../variables.scss";
+
+.hide {
+  display: hidden;
+}
+
+.backDrop {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.modal__container {
+  position: sticky;
+  right: 35%;
+  @include flex(column, center, center);
+  height: 800px;
+  width: 668px;
+  margin: 200px auto 0px auto;
+  @include font($font-fam, 16px, 400, #000000);
+
+  &__header {
+    width: 100%;
+    @include flex(row, space-between, center);
+
+    &__close {
+      border: none;
+      border-radius: 50%;
+      text-transform: uppercase;
+      font-weight: 800;
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+
+    &__img {
+      width: 195px;
+      height: 42px;
+    }
+  }
+
+  &__element {
+    @include flex(column, flex-start, center);
+    background-color: #ffffff;
+    border-radius: 30px;
+    height: 668px;
+    width: 668px;
+    margin-top: 20px;
+
+    &__switch {
+      margin-top: 38px;
+      background: #e3e3e3;
+      width: 487px;
+      height: 43px;
+      @include flex(row, space-between, center);
+      border-radius: 21.5px;
+      padding: 6px 17px 5px 17px;
+
+      &__qr-btn {
+        letter-spacing: 0.8px;
+        color: #5e5e5e;
+        font-size: 16px;
+        cursor: pointer;
+        width: 193px;
+        height: 32px;
+        border: none;
+        background: #e3e3e3;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .active {
+        background: #ffffff;
+        border-radius: 16px;
+      }
+
+      &__desktop {
+        letter-spacing: 0.8px;
+        color: #5e5e5e;
+        font-size: 16px;
+        cursor: pointer;
+        width: 193px;
+        height: 32px;
+        border: none;
+        background: #e3e3e3;
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+
+    &__qr {
+      @include flex(column, center, center);
+
+      &__text {
+        color: #c7c7c7;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+
+      &__img {
+        height: 415px;
+        width: 415px;
+      }
+    }
+
+    &__desktop {
+      @include flex(column, center, center);
+      margin-top: 34px;
+
+      &__text {
+        color: #c7c7c7;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+
+      &__input {
+        margin-top: 29px;
+        width: 487px;
+        height: 33px;
+        border-radius: 16.5px;
+        background-color: #e3e3e3;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        color: #b4b4b4;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+
+      &__wallets {
+        @include grid(1fr 1fr 1fr 1fr, 1, 66px);
+        margin-top: 39px;
+
+        &__img {
+          cursor: pointer;
+          width: 72px;
+          height: 72px;
+          background-color: #d9d9d9;
+          border-radius: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

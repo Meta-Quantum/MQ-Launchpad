@@ -1,0 +1,70 @@
+@import '../../../variables.scss';
+
+
+.menu__container{
+@include flex(row, flex-end, center);
+@include font ($font-fam, 20px, 400, white);
+width: 100%;
+gap:96px;
+
+&__element{
+    &__link{
+        cursor: pointer;
+        transition: ease-in-out 0.5s;
+        display: inline-block;
+        position: relative;
+
+&::after{
+ content: '';
+ position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+        
+        &:hover::after{
+            transition: ease-in-out 0.3s;
+            transform: scale(1);
+            transform-origin: bottom left;
+        }
+
+        &:hover{
+            transition: ease-in-out 0.3s;
+            scale:1.1;
+        }
+    }
+}
+
+
+}
+
+@media screen and (max-width:1671px)  {
+  
+    .menu__container{
+        gap:30px;
+    }
+
+   }
+
+   @media screen and (max-width:1224px)  {
+  
+    .menu__container{
+        gap:10px;
+    }
+
+   }
+
+
+   @media screen and (max-width:1117px)  {
+  
+    .menu__container{
+        display: none;
+    }
+
+   }

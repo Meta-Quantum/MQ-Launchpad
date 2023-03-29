@@ -1,0 +1,43 @@
+@import '../../../../variables.scss';
+
+.elementDash__container{
+    @include flex(row, flex-end, center);
+    @include font($font-fam, 20px, 400, white);
+    width: 100%;
+    gap:40px;
+
+    &__element{
+        @include flex(row, center, center);
+        gap:15px;
+        background-color:rgba(67,67,67, 0.35);
+        border-radius: 29.5px;
+        height: 59px;
+        padding: 0px 25px 0px 25px;
+        letter-spacing:1.38px;
+      
+
+        &__coinIcon{
+            margin-left: -20px;
+            height:44px;
+            width:44px;
+            background: white;
+            border-radius:50%;
+        }
+
+        &__coinNumber{
+            background:none;
+            border:none;
+            :placeholder-shown{
+                color: white;
+            }
+    }
+
+    &__walletAddress{
+        background-color:rgba(67,67,67, 1);
+        padding:14px;
+        border-radius:29.5px;
+        margin-right:-25px;
+        // background-color:white;
+            }
+}
+}
