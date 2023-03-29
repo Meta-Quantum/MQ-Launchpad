@@ -11,16 +11,16 @@ const Kyc = () => {
   const [step, setStep] = useState(1);
 
   const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      telegram: '',
-      projectName: '',
-      projectWebsite: '',
-      projectDescription: '',
-      tokenPrice: '',
-      tokenSupply: '',
-      tokenCap: '',
-      startDate: '',
+  name: '',
+  email: '',
+  telegram: '',
+  projectName: '',
+  projectWebsite: '',
+  projectDescription: '',
+  tokenPrice: '',
+  tokenSupply: '',
+  tokenCap: '',
+  startDate: '',
     });
 
   const group:any = useRef()
@@ -51,6 +51,13 @@ const Kyc = () => {
   const tokenSupplyRef: any = useRef()
   const tokenStartDateRef: any = useRef()
 
+  const groups = [group, group2, group3, group4, group5];
+  const items = [item1, item2, item3, item4, item5];
+  const currentGroup = groups[step - 1];
+  const nextGroup = groups[step];
+  const currentItem = items[step - 1];
+  const nextItem = items[step];
+
   const isValid = () => {
     const requiredFields = [
       [nameRef, emailRef, passwordRef, confirmPasswordRef],
@@ -73,13 +80,6 @@ const Kyc = () => {
   const nextPhase = async (e: { preventDefault: () => void; }) => {   
     if(!isValid()) return;
   
-    const groups = [group, group2, group3, group4, group5];
-    const items = [item1, item2, item3, item4, item5];
-    const currentGroup = groups[step - 1];
-    const nextGroup = groups[step];
-    const currentItem = items[step - 1];
-    const nextItem = items[step];
-  
     currentGroup.current.classList.add('hide');
     nextGroup.current.classList.remove('hide');
     currentItem.current.classList.remove('active');
@@ -97,16 +97,39 @@ const Kyc = () => {
       }
   }, []);
 
-   
+ const showGroup = (event: any) => {
+  const clickedItem = event.target.closest("p");
+  const clickedIndex = items.findIndex((item) => item.current.isSameNode(clickedItem));
+  console.log(clickedIndex);
+
+  if (clickedIndex >= 0 && clickedIndex < step - 1) {
+    setStep(clickedIndex + 1);
+    groups.forEach((group, i) => {
+      if (i === clickedIndex) {
+        group.current.classList.remove('hide');
+        items[i].current.classList.add('active');
+      } else {
+        group.current.classList.add('hide');
+        items[i].current.classList.remove('active');
+      }
+    });
+  } else if (clickedIndex === step - 1) {
+    currentGroup.current.classList.remove('hide');
+    currentItem.current.classList.add('active');
+  } else if (clickedIndex === step) {
+    nextPhase(event);
+  }
+};
+                     
   return(
       <>
       <Navbar />
         <div className='container__KYC'>
           <div className='container__KYC__nav'>
-              <p ref={item1} className="container__KYC__nav__item active">Register</p>
-              <p ref={item2} className="container__KYC__nav__item">Project details</p>
-              <p ref={item3} className="container__KYC__nav__item">Project papers</p>
-              <p ref={item4} className="container__KYC__nav__item">Project token</p>
+              <p ref={item1} onClick={showGroup} className="container__KYC__nav__item active">Register</p>
+              <p ref={item2} onClick={showGroup} className="container__KYC__nav__item">Project details</p>
+              <p ref={item3} onClick={showGroup} className="container__KYC__nav__item">Project papers</p>
+              <p ref={item4} onClick={showGroup} className="container__KYC__nav__item">Project token</p>
               <p ref={item5} className="container__KYC__nav__item">Complete</p>
           </div>
             <form className="container__KYC__form">
