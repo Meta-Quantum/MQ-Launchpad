@@ -37,8 +37,6 @@ const Kyc = () => {
   //required fields
   const nameRef: any = useRef()
   const emailRef: any = useRef()
-  const passwordRef: any = useRef()
-  const confirmPasswordRef: any = useRef()
   const projectNameRef: any = useRef()
   const projectWebsiteRef: any = useRef()
   const applicationLinkRef: any = useRef()
@@ -60,22 +58,27 @@ const Kyc = () => {
 
   const isValid = () => {
     const requiredFields = [
-      [nameRef, emailRef, passwordRef, confirmPasswordRef],
+      [nameRef, emailRef],
       [projectNameRef, projectWebsiteRef, applicationLinkRef],
       [projectDescriptionRef, intentionDescriptionRef, whitePaperRef],
-      [tokenPriceRef, legalEntityPaperRef, tokenSaleCapRef, tokenSupplyRef, tokenStartDateRef]
+      [tokenPriceRef, legalEntityPaperRef, tokenSaleCapRef, tokenSupplyRef, tokenStartDateRef],
     ];
   
     let allFieldsValid = true;
     const fieldsToCheck = requiredFields[step - 1];
+  
     for (const fieldRef of fieldsToCheck) {
       if (fieldRef.current.focusNotValidated() || fieldRef.current.error) {
         allFieldsValid = false;
       }
     }
-    return allFieldsValid;
-  }
   
+    if (password !== confirmPassword || !VALIDATION_REGEXES.passwordRegex.test(password) || !VALIDATION_REGEXES.passwordRegex.test(confirmPassword)) {
+      allFieldsValid = false;
+    }
+    return allFieldsValid;
+  };
+
   const nextPhase = (e: any) => {  
 
     if(!isValid()) return;
@@ -188,17 +191,16 @@ const Kyc = () => {
                     placeHolder= "Telegram handle"
                   />
                   <JRSInput
-                    ref={passwordRef}
                     type="password"
                     placeHolder= "Enter password"
                     onChange={(event) => setPassword(event.target.value)}
                     validate={{
                       required: "Password can't be empty",
-                      pattern: [VALIDATION_REGEXES.passwordRegex, "Password not valid: It must be 10 characters long, at least one capital letter, one number and one special character from the set !-?%&<>£$;^."]
+                      pattern: [VALIDATION_REGEXES.passwordRegex, "Password not valid: It must be 10 characters long, at least one capital letter, one number and one special character from the set !-?%&<>£$;^."],
+                      
                     }}
                   />
                   <JRSInput
-                    ref={confirmPasswordRef}
                     type="password"
                     placeHolder= "Confirm password"
                     onChange={(event) => setConfirmPassword(event.target.value)}
