@@ -73,13 +73,14 @@ const Kyc = () => {
         allFieldsValid = false;
       }
     }
-  
     return allFieldsValid;
   }
   
-  const nextPhase = async (e: { preventDefault: () => void; }) => {   
+  const nextPhase = (e: any) => {  
+
     if(!isValid()) return;
-  
+    e.preventDefault();
+
     currentGroup.current.classList.add('hide');
     nextGroup.current.classList.remove('hide');
     currentItem.current.classList.remove('active');
@@ -88,6 +89,35 @@ const Kyc = () => {
     setStep(step + 1);
     localStorage.setItem('formData', JSON.stringify(formData));
   }
+  const submit = async (e: { preventDefault: () => void; }) => {
+
+    if(!isValid()) return;
+    e.preventDefault();
+    
+    console.log("submit");
+    group4.current.classList.add('hide');
+    group5.current.classList.remove('hide');
+    item4.current.classList.remove('active');
+    item5.current.classList.add('active');
+  
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+    // TODO : send data to DB
+/*    const data = {
+      name: formData.name,
+      email: formData.email,
+      telegram: formData.telegram,
+      projectName: formData.projectName, 
+      projectWebsite: formData.projectWebsite,
+      projectDescription: formData.projectDescription,
+      tokenPrice: formData.tokenPrice,
+      tokenSupply: formData.tokenSupply,
+      tokenCap: formData.tokenCap,
+      startDate: formData.startDate,
+    } */
+  
+  }
+
   
   
   useEffect(() => {
@@ -97,29 +127,30 @@ const Kyc = () => {
       }
   }, []);
 
- const showGroup = (event: any) => {
-  const clickedItem = event.target.closest("p");
-  const clickedIndex = items.findIndex((item) => item.current.isSameNode(clickedItem));
-  console.log(clickedIndex);
+  //show group on click on nav item 
+  const showGroup = (event: any) => {
+    const clickedItem = event.target.closest("p");
+    const clickedIndex = items.findIndex((item) => item.current.isSameNode(clickedItem));
+    
 
-  if (clickedIndex >= 0 && clickedIndex < step - 1) {
-    setStep(clickedIndex + 1);
-    groups.forEach((group, i) => {
-      if (i === clickedIndex) {
-        group.current.classList.remove('hide');
-        items[i].current.classList.add('active');
-      } else {
-        group.current.classList.add('hide');
-        items[i].current.classList.remove('active');
-      }
-    });
-  } else if (clickedIndex === step - 1) {
-    currentGroup.current.classList.remove('hide');
-    currentItem.current.classList.add('active');
-  } else if (clickedIndex === step) {
-    nextPhase(event);
-  }
-};
+    if (clickedIndex >= 0 && clickedIndex < step - 1) {
+      setStep(clickedIndex + 1);
+      groups.forEach((group, i) => {
+        if (i === clickedIndex) {
+          group.current.classList.remove('hide');
+          items[i].current.classList.add('active');
+        } else {
+          group.current.classList.add('hide');
+          items[i].current.classList.remove('active');
+        }
+      });
+    } else if (clickedIndex === step - 1) {
+      currentGroup.current.classList.remove('hide');
+      currentItem.current.classList.add('active');
+    } else if (clickedIndex === step) {
+      nextPhase(event);
+    }
+  };
                      
   return(
       <>
@@ -275,7 +306,7 @@ const Kyc = () => {
                 placeHolder="Project token supply"
                 validate={{
                   required: "Project token supply field can't be empty",
-                  pattern : [VALIDATION_REGEXES.tokenSupplyReegx, "This token supply seems to be wrong."]
+                  pattern : [VALIDATION_REGEXES.tokenSupplyRegex, "This token supply seems to be wrong."]
                 }}
               />
               <JRSInput
@@ -287,15 +318,20 @@ const Kyc = () => {
                   pattern : [VALIDATION_REGEXES.tokenCapRegex, "This token sale cap seems to be wrong."]
                 }}
               />
-                <JRSInput
+              <JRSInput
                 ref={tokenStartDateRef}
+                inputVal={formData?.startDate}
+                type="date" 
                 placeHolder="Project token start date YYYY/MM/DD"
-                type="date"
                 onChange={(e) => {
                   setDate(e.target.value);
                 }}
+                validate={{
+                  required: "Token sale start date field can't be empty",
+                  pattern: [VALIDATION_REGEXES.dateRegex, "This date must be in the format YYYY-MM-DD"],
+                }}
               />
-              <input onClick={nextPhase} className="container__KYC__form__group__btn" type='button' value='Submit' />
+              <input onClick={submit} className="container__KYC__form__group__btn" type='button' value='Submit' />
               </div>
               <div ref={group5} className="container__KYC__form__group hide">
                 <h3>Completed!</h3>
