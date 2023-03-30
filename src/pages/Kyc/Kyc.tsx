@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect} from 'react';
+import bcrypt from 'bcryptjs';
 import { VALIDATION_REGEXES } from '../../utilities/ValidationRegex';
 import "./Kyc.scss"
 import Navbar from "../../components/Navbar/Navbar"
@@ -96,14 +97,17 @@ const Kyc = () => {
 
     if(!isValid()) return;
     e.preventDefault();
-    
+
+    const hashedPassword = await bcrypt.hash(password, 10); 
+    const formDataWithHashedPassword = { ...formData, password: hashedPassword };
+
     console.log("submit");
     group4.current.classList.add('hide');
     group5.current.classList.remove('hide');
     item4.current.classList.remove('active');
     item5.current.classList.add('active');
   
-    localStorage.setItem('formData', JSON.stringify(formData));
+    localStorage.setItem('formData', JSON.stringify(formDataWithHashedPassword));
 
     // TODO : send data to DB
 /*    const data = {

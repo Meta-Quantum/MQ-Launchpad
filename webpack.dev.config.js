@@ -78,6 +78,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".jsx", ".ts", ".js"],
+    fallback: {
+      "crypto": false
+    }
   },
   plugins: [
     new CleanWebpackPlugin(),
