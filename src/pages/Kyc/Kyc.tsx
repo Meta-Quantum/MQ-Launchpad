@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect} from 'react';
+import bcrypt from 'bcryptjs';
 import { VALIDATION_REGEXES } from '../../utilities/ValidationRegex';
 import "./Kyc.scss"
 import Navbar from "../../components/Navbar/Navbar"
@@ -37,8 +38,6 @@ const Kyc = () => {
   //required fields
   const nameRef: any = useRef()
   const emailRef: any = useRef()
-  const passwordRef: any = useRef()
-  const confirmPasswordRef: any = useRef()
   const projectNameRef: any = useRef()
   const projectWebsiteRef: any = useRef()
   const applicationLinkRef: any = useRef()
@@ -60,26 +59,32 @@ const Kyc = () => {
 
   const isValid = () => {
     const requiredFields = [
-      [nameRef, emailRef, passwordRef, confirmPasswordRef],
+      [nameRef, emailRef],
       [projectNameRef, projectWebsiteRef, applicationLinkRef],
       [projectDescriptionRef, intentionDescriptionRef, whitePaperRef],
-      [tokenPriceRef, legalEntityPaperRef, tokenSaleCapRef, tokenSupplyRef, tokenStartDateRef]
+      [tokenPriceRef, legalEntityPaperRef, tokenSaleCapRef, tokenSupplyRef, tokenStartDateRef],
     ];
   
     let allFieldsValid = true;
     const fieldsToCheck = requiredFields[step - 1];
+  
     for (const fieldRef of fieldsToCheck) {
       if (fieldRef.current.focusNotValidated() || fieldRef.current.error) {
         allFieldsValid = false;
       }
     }
   
+    if (password !== confirmPassword || !VALIDATION_REGEXES.passwordRegex.test(password) || !VALIDATION_REGEXES.passwordRegex.test(confirmPassword)) {
+      allFieldsValid = false;
+    }
     return allFieldsValid;
-  }
-  
-  const nextPhase = async (e: { preventDefault: () => void; }) => {   
+  };
+
+  const nextPhase = (e: any) => {  
+
     if(!isValid()) return;
-  
+    e.preventDefault();
+
     currentGroup.current.classList.add('hide');
     nextGroup.current.classList.remove('hide');
     currentItem.current.classList.remove('active');
@@ -88,8 +93,38 @@ const Kyc = () => {
     setStep(step + 1);
     localStorage.setItem('formData', JSON.stringify(formData));
   }
+  const submit = async (e: { preventDefault: () => void; }) => {
+
+    if(!isValid()) return;
+    e.preventDefault();
+
+    const hashedPassword = await bcrypt.hash(password, 10); 
+    const formDataWithHashedPassword = { ...formData, password: hashedPassword };
+
+    console.log("submit");
+    group4.current.classList.add('hide');
+    group5.current.classList.remove('hide');
+    item4.current.classList.remove('active');
+    item5.current.classList.add('active');
   
+    localStorage.setItem('formData', JSON.stringify(formDataWithHashedPassword));
+
+    // TODO : send data to DB
+/*    const data = {
+      name: formData.name,
+      email: formData.email,
+      telegram: formData.telegram,
+      projectName: formData.projectName, 
+      projectWebsite: formData.projectWebsite,
+      projectDescription: formData.projectDescription,
+      tokenPrice: formData.tokenPrice,
+      tokenSupply: formData.tokenSupply,
+      tokenCap: formData.tokenCap,
+      startDate: formData.startDate,
+    } */
   
+  }
+
   useEffect(() => {
       const savedFormData = JSON.parse(localStorage.getItem('formData'));
       if (savedFormData) {
@@ -97,29 +132,30 @@ const Kyc = () => {
       }
   }, []);
 
- const showGroup = (event: any) => {
-  const clickedItem = event.target.closest("p");
-  const clickedIndex = items.findIndex((item) => item.current.isSameNode(clickedItem));
-  console.log(clickedIndex);
+  //show group on click on nav item 
+  const showGroup = (event: any) => {
+    const clickedItem = event.target.closest("p");
+    const clickedIndex = items.findIndex((item) => item.current.isSameNode(clickedItem));
+    
 
-  if (clickedIndex >= 0 && clickedIndex < step - 1) {
-    setStep(clickedIndex + 1);
-    groups.forEach((group, i) => {
-      if (i === clickedIndex) {
-        group.current.classList.remove('hide');
-        items[i].current.classList.add('active');
-      } else {
-        group.current.classList.add('hide');
-        items[i].current.classList.remove('active');
-      }
-    });
-  } else if (clickedIndex === step - 1) {
-    currentGroup.current.classList.remove('hide');
-    currentItem.current.classList.add('active');
-  } else if (clickedIndex === step) {
-    nextPhase(event);
-  }
-};
+    if (clickedIndex >= 0 && clickedIndex < step - 1) {
+      setStep(clickedIndex + 1);
+      groups.forEach((group, i) => {
+        if (i === clickedIndex) {
+          group.current.classList.remove('hide');
+          items[i].current.classList.add('active');
+        } else {
+          group.current.classList.add('hide');
+          items[i].current.classList.remove('active');
+        }
+      });
+    } else if (clickedIndex === step - 1) {
+      currentGroup.current.classList.remove('hide');
+      currentItem.current.classList.add('active');
+    } else if (clickedIndex === step) {
+      nextPhase(event);
+    }
+  };
                      
   return(
       <>
@@ -157,17 +193,16 @@ const Kyc = () => {
                     placeHolder= "Telegram handle"
                   />
                   <JRSInput
-                    ref={passwordRef}
                     type="password"
                     placeHolder= "Enter password"
                     onChange={(event) => setPassword(event.target.value)}
                     validate={{
                       required: "Password can't be empty",
-                      pattern: [VALIDATION_REGEXES.passwordRegex, "Password not valid: It must be 10 characters long, at least one capital letter, one number and one special character from the set !-?%&<>£$;^."]
+                      pattern: [VALIDATION_REGEXES.passwordRegex, "Password not valid: It must be 10 characters long, at least one capital letter, one number and one special character from the set !-?%&<>£$;^."],
+                      
                     }}
                   />
                   <JRSInput
-                    ref={confirmPasswordRef}
                     type="password"
                     placeHolder= "Confirm password"
                     onChange={(event) => setConfirmPassword(event.target.value)}
@@ -214,7 +249,7 @@ const Kyc = () => {
               </div>
               
               <div ref={group3} className="container__KYC__form__group hide">
-                <h3 className="container__KYC__form__group__title">Project Details</h3>
+                <h3 className="container__KYC__form__group__title">Project Papers</h3>
                 <JRSInput
                   ref={projectDescriptionRef}
                   placeHolder="Project description"
@@ -260,6 +295,7 @@ const Kyc = () => {
               
            
               <div ref={group4} className="container__KYC__form__group hide">
+              <h3 className="container__KYC__form__group__title">Project token</h3>
                 <JRSInput
                 ref={tokenPriceRef}
                 type="number"
@@ -275,7 +311,7 @@ const Kyc = () => {
                 placeHolder="Project token supply"
                 validate={{
                   required: "Project token supply field can't be empty",
-                  pattern : [VALIDATION_REGEXES.tokenSupplyReegx, "This token supply seems to be wrong."]
+                  pattern : [VALIDATION_REGEXES.tokenSupplyRegex, "This token supply seems to be wrong."]
                 }}
               />
               <JRSInput
@@ -287,15 +323,20 @@ const Kyc = () => {
                   pattern : [VALIDATION_REGEXES.tokenCapRegex, "This token sale cap seems to be wrong."]
                 }}
               />
-                <JRSInput
+              <JRSInput
                 ref={tokenStartDateRef}
+                inputVal={formData?.startDate}
+                type="date" 
                 placeHolder="Project token start date YYYY/MM/DD"
-                type="date"
                 onChange={(e) => {
                   setDate(e.target.value);
                 }}
+                validate={{
+                  required: "Token sale start date field can't be empty",
+                  pattern: [VALIDATION_REGEXES.dateRegex, "This date must be in the format YYYY-MM-DD"],
+                }}
               />
-              <input onClick={nextPhase} className="container__KYC__form__group__btn" type='button' value='Submit' />
+              <input onClick={submit} className="container__KYC__form__group__btn" type='button' value='Submit' />
               </div>
               <div ref={group5} className="container__KYC__form__group hide">
                 <h3>Completed!</h3>
