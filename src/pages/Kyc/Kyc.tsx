@@ -125,8 +125,6 @@ const Kyc = () => {
   
   }
 
-  
-  
   useEffect(() => {
       const savedFormData = JSON.parse(localStorage.getItem('formData'));
       if (savedFormData) {
@@ -251,7 +249,7 @@ const Kyc = () => {
               </div>
               
               <div ref={group3} className="container__KYC__form__group hide">
-                <h3 className="container__KYC__form__group__title">Project Details</h3>
+                <h3 className="container__KYC__form__group__title">Project Papers</h3>
                 <JRSInput
                   ref={projectDescriptionRef}
                   placeHolder="Project description"
@@ -297,6 +295,7 @@ const Kyc = () => {
               
            
               <div ref={group4} className="container__KYC__form__group hide">
+              <h3 className="container__KYC__form__group__title">Project token</h3>
                 <JRSInput
                 ref={tokenPriceRef}
                 type="number"
