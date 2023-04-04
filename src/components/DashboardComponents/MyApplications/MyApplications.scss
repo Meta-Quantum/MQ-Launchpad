@@ -1,79 +1,84 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 
+.apps__container {
+  margin: 290px auto 164px auto;
+  width: 90%;
+  @include flex(column, flex-start, flex-start);
+  @include font($font-fam, 20px, 400, white);
+  background-image: linear-gradient(to top, #360033, #0b8793);
+  border-radius: 29.5px;
 
-.apps__container{
-    margin: 290px auto 164px auto;
-    width:90%;
-    @include flex(column, flex-start, flex-start);
-    @include font ($font-fam, 20px, 400, white);
-    background-image: linear-gradient(to top, #360033, #0b8793);
-    border-radius:29.5px;
-
-    &__btn{
-        cursor: pointer;
-        position:relative;
-        top:25px;
-        left:43%;
-background-color: transparent;
-        border: 2px solid white;
-        color:white;
-        border-radius: 27.8px;
-        width:255px;
-        height:56px;
-        font-size:19.5px;
-        letter-spacing: 0.98px;
-        text-transform: uppercase;
+  &__btn {
+    cursor: pointer;
+    position: relative;
+    top: 25px;
+    left: 43%;
+    border: 2px solid white;
+    color: white;
+    border-radius: 27.8px;
+    width: 255px;
+    height: 56px;
+    font-size: 19.5px;
+    letter-spacing: 0.98px;
+    text-transform: uppercase;
+    background: linear-gradient(white, white);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: ease-in-out 0.5s;
+    &:hover {
+      background-size: 100% 100%;
+      color: black;
+      scale: 1.1;
+      transition: ease-in-out 0.5s;
     }
-    
-    &__title{
-        padding:0px 20px 0px 75px;
-    }
+  }
 
-    &__table{
-        margin:auto;
-     width:90%;
+  &__title {
+    padding: 0px 20px 0px 75px;
+  }
 
-    &__row__head{
-        &__name{
-            text-align : left;
-        }
-        &__date{
-            text-align : right;
-        }
-        &__status{
-            text-align : right;
-            padding-right:80px;
-        }
-    }
+  &__table {
+    margin: auto;
+    width: 90%;
 
-    &__row__data{
-        color: rgba(255, 255, 255, 0.4);
-        &__name{
-            text-align : left;
-        }
-        &__date{
-            text-align : right;
-        }
-        &__status{
-            text-align : right;
-            @include flex(row, flex-end, center);
-            gap:33px;
-
-            &__btn{
-            background-image: linear-gradient(to right, #676767, #fff);
-            border: none;
-            border-radius: 27.8px;
-            font-size: 10px;
-            letter-spacing: 0.5px;
-            width:97px;
-            height:28px;
-            padding:10px;
-            text-transform: uppercase;
-            }
-        }
+    &__row__head {
+      &__name {
+        text-align: left;
+      }
+      &__date {
+        text-align: right;
+      }
+      &__status {
+        text-align: right;
+        padding-right: 80px;
+      }
     }
 
-    }
-    
+    &__row__data {
+      color: rgba(255, 255, 255, 0.4);
+      &__name {
+        text-align: left;
+      }
+      &__date {
+        text-align: right;
+      }
+      &__status {
+        text-align: right;
+        @include flex(row, flex-end, center);
+        gap: 33px;
 
+        &__btn {
+          background-image: linear-gradient(to right, #676767, #fff);
+          border: none;
+          border-radius: 27.8px;
+          font-size: 10px;
+          letter-spacing: 0.5px;
+          width: 97px;
+          height: 28px;
+          padding: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }

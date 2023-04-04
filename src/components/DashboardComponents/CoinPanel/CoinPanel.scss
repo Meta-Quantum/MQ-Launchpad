@@ -1,132 +1,132 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 
-.coinPanel__container{
-@include flex(column, center, center);
-width:700px;
-height:603px;
+.coinPanel__container {
+  @include flex(column, center, center);
+  width: 700px;
+  height: 603px;
 
-&__header{
-    padding:0;
-   width:100%;
-   @include flex(row, space-around, center);
-   height:72px;
+  &__header {
+    padding: 0;
+    width: 100%;
+    @include flex(row, space-around, center);
+    height: 72px;
 
-   &__titleContainer1{
-    width:50%;
-    height:72px;
-    text-align: center;
-    &__title1{
-        padding-top:19px;
-        font-size:22px;
+    &__titleContainer1 {
+      width: 50%;
+      height: 72px;
+      text-align: center;
+      &__title1 {
+        padding-top: 19px;
+        font-size: 22px;
         letter-spacing: 1.1px;
+      }
     }
-   }
 
+    &__titleContainer2 {
+      width: 50%;
+      height: 72px;
+      text-align: center;
+      background: rgba(67, 67, 67, 0.2);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      &__title2 {
+        padding-top: 19px;
+        font-size: 22px;
+        letter-spacing: 1.1px;
+      }
+    }
+  }
 
-&__titleContainer2{
-    width:50%;
-    height:72px;
-    text-align: center;
-    background: rgba(67, 67, 67, 0.2) ;
+  &__card {
+    background-image: linear-gradient(to left, #360033, #0b8793);
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    &__title2{
-        padding-top:19px;
-        font-size:22px;
-        letter-spacing: 1.1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+
+    &__wrap {
+      margin: 39px auto 0px auto;
+      width: 80%;
+
+      &__text {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+
+        &__link {
+          font-size: 14px;
+          color: white;
+          text-decoration: underline;
+        }
+      }
     }
-   }
 
-}
+    &__element {
+      @include flex(column, space-between, center);
+      margin: auto;
+      width: 80%;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 29.5px;
 
-&__card{
-background-image: linear-gradient(to left, #360033, #0b8793);
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-width:100%;
-
-&__wrap{
-margin: 39px auto 0px auto;
-width:80%;
-
-
-&__text{
-    font-size:14px;
-    letter-spacing: 0.7px;
-
-&__link{
-    font-size:14px;
-    color:white;
-    text-decoration:underline;
-}
-}
-}
-
-&__element{
-    @include flex(column, space-between, center);
-    margin: auto;
-    width:80%;
-    background:rgba(0, 0, 0, 0.35);
-    border-radius:29.5px;
-
-    &__wrap{
-        width:80%;
+      &__wrap {
+        width: 80%;
         @include flex(row, space-between, center);
 
-&__left{
-    &__coin{
-        @include flex(row, center, center);
-        gap:18px;
-        &__icon{
-            height:60px;
-            width:60px;
-            background: white;
-            border-radius:50%;
+        &__left {
+          &__coin {
+            @include flex(row, center, center);
+            gap: 18px;
+            &__icon {
+              height: 60px;
+              width: 60px;
+              background: white;
+              border-radius: 50%;
+            }
+
+            &__number {
+              font-size: 50.5px;
+              letter-spacing: 2.53px;
+            }
+          }
+
+          &__text {
+            margin-top: -50px;
+            font-size: 27.5px;
+            letter-spacing: 1.38px;
+          }
         }
 
- &__number{
-    font-size:50.5px;
-    letter-spacing: 2.53px;
- }
+        &__right {
+          font-size: 26.5px;
+          letter-spacing: 1.33px;
+        }
+      }
     }
 
-    &__text{
-        margin-top:-50px;
-        font-size:27.5px;
-        letter-spacing: 1.38px;
+    &__button {
+      cursor: pointer;
+      margin-top: 59px;
+      position: relative;
+      left: 37%;
+      color: white;
+      top: 20px;
+      border: none;
+      border-radius: 27.8px;
+      width: 199px;
+      height: 56px;
+      font-size: 19.5px;
+      letter-spacing: 0.98px;
+      text-transform: uppercase;
+      border: 2px solid white;
+      background: linear-gradient(white, white);
+      background-size: 0 100%;
+      background-repeat: no-repeat;
+      transition: ease-in-out 0.5s;
+      &:hover {
+        background-size: 100% 100%;
+        color: black;
+        scale: 1.1;
+        transition: ease-in-out 0.5s;
+      }
     }
-}
-
-&__right{
-    font-size:26.5px;
-    letter-spacing: 1.33px;
-}
-
-
-    }
-    
-}
-
-&__button{
-    cursor: pointer;
-    margin-top:59px;
-    position:relative;
-    left:37%;
-    color:white;
-    top:20px;
-  background-color: transparent;
-    border: none;
-    border-radius: 27.8px;
-    width: 199px;
-    height: 56px;
-    font-size:19.5px;
-    letter-spacing: 0.98px;
-    text-transform: uppercase;
-    border: 2px solid white;
-}
-
-}
-
-
+  }
 }
